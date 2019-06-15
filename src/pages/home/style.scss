@@ -1,0 +1,135 @@
+$pd-background: #f4ebe6;
+$pd-text-dark: #454442;
+$pd-text-light: #c0b0ad;
+
+.pd-homepage {
+  color: $pd-text-dark;
+  margin-top: 40px;
+  
+  h1 {
+    color: inherit;
+    letter-spacing: 4px;
+    font-weight: bold;
+  }
+
+  header {
+    margin-top: 50px;
+    position: relative;
+  }
+
+  &-menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    a {
+      font-weight: bold;
+      margin: 0 10px;
+    }
+  }
+
+  .ant-btn-link {
+    color: inherit;
+  }
+
+  .ant-tabs {
+    margin-top: 60px;
+    overflow: unset;
+
+    &-bar {
+      border-bottom: none;
+      position: absolute;
+      right: 0;
+      bottom: -50px;
+    }
+
+    &-tab {
+      text-transform: uppercase;
+      color: $pd-text-light;
+
+      &-active {
+        font-weight: bold;
+        color: inherit;
+
+        &::after {
+          content: '•';
+          color: $pd-text-dark;
+          font-size: 32px;
+          position: absolute;
+          top: -3px;
+          left: 14px;
+        }
+      }
+    }
+    
+    &-nav-scroll {
+      text-align: right;
+    }
+    
+    &-ink-bar {
+      display: none !important;
+    }
+
+    &-tabpane {
+      height: 600px;
+    }
+
+    .tab-1,
+    .tab-2,
+    .tab-3 {
+      padding-top: 60px;
+
+      div {
+        font-size: 100px;
+        font-weight: bold;
+        letter-spacing: 12px;
+        line-height: 120px;
+        text-transform: uppercase;
+      }
+
+      p {
+        margin-top: 30px;
+        font-weight: bold;
+      }
+    }
+
+    .tab-1 {
+      div:nth-child(3) {
+        color: $pd-text-light;
+      }
+    }
+
+    .tab-2 {
+      text-align: center;
+
+      div:nth-child(2) {
+        color: $pd-text-light;
+      }
+    }
+
+    .tab-3 {
+      text-align: right;
+
+      div:nth-child(4) {
+        color: $pd-text-light;
+      }
+    }
+  }
+
+  footer {
+    align-items: center;
+    display: flex;
+    
+    .social-media,
+    .blog {
+      display: inline-block;
+      text-transform: uppercase;
+    }
+
+    .blog {
+      font-size: 20px;
+      font-weight: bold;
+      margin-left: 400px;
+    }
+  }
+}
