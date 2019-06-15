@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.f8be681a.chunk.css",
-    "main.js": "/static/js/main.e63ef1f8.chunk.js",
-    "main.js.map": "/static/js/main.e63ef1f8.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/css/2.128fc69f.chunk.css": "/static/css/2.128fc69f.chunk.css",
-    "static/js/2.5f920bfb.chunk.js": "/static/js/2.5f920bfb.chunk.js",
-    "static/js/2.5f920bfb.chunk.js.map": "/static/js/2.5f920bfb.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.d1892d3b2788b0cc697b091094cdf2de.js": "/precache-manifest.d1892d3b2788b0cc697b091094cdf2de.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.128fc69f.chunk.css.map": "/static/css/2.128fc69f.chunk.css.map",
-    "static/css/main.f8be681a.chunk.css.map": "/static/css/main.f8be681a.chunk.css.map"
+    "main.css": "/pandasite/build/static/css/main.f8be681a.chunk.css",
+    "main.js": "/pandasite/build/static/js/main.d377899e.chunk.js",
+    "main.js.map": "/pandasite/build/static/js/main.d377899e.chunk.js.map",
+    "runtime~main.js": "/pandasite/build/static/js/runtime~main.335e42e0.js",
+    "runtime~main.js.map": "/pandasite/build/static/js/runtime~main.335e42e0.js.map",
+    "static/css/2.128fc69f.chunk.css": "/pandasite/build/static/css/2.128fc69f.chunk.css",
+    "static/js/2.13c3566a.chunk.js": "/pandasite/build/static/js/2.13c3566a.chunk.js",
+    "static/js/2.13c3566a.chunk.js.map": "/pandasite/build/static/js/2.13c3566a.chunk.js.map",
+    "index.html": "/pandasite/build/index.html",
+    "precache-manifest.317a03bbb8e459e35b431d6f77196865.js": "/pandasite/build/precache-manifest.317a03bbb8e459e35b431d6f77196865.js",
+    "service-worker.js": "/pandasite/build/service-worker.js",
+    "static/css/2.128fc69f.chunk.css.map": "/pandasite/build/static/css/2.128fc69f.chunk.css.map",
+    "static/css/main.f8be681a.chunk.css.map": "/pandasite/build/static/css/main.f8be681a.chunk.css.map"
   }
 }
