@@ -1,135 +1,243 @@
-$pd-background: #f4ebe6;
+$pd-background: #f7f2ee;
+$pd-background-dark: #f3ece4;
+$pd-background-darker: #dbccc4;
+$pd-color-dark-blue: #001e32;
+$pd-color-gray: #f1f1f1;
+
 $pd-text-dark: #454442;
 $pd-text-light: #c0b0ad;
 
+$pd-font-size-xs: 10px; 
+$pd-font-size-sm: 14px; 
+$pd-font-size-md: 20px; 
+$pd-font-size-lg: 40px; 
+
 .pd-homepage {
-  color: $pd-text-dark;
-  margin-top: 40px;
+  &-main {
+    color: $pd-text-dark;
+    display: flex;
   
-  h1 {
-    color: inherit;
-    letter-spacing: 4px;
-    font-weight: bold;
-  }
-
-  header {
-    margin-top: 50px;
-    position: relative;
-  }
-
-  &-menu {
-    position: absolute;
-    right: 0;
-    top: 0;
-
-    a {
-      font-weight: bold;
-      margin: 0 10px;
-    }
-  }
-
-  .ant-btn-link {
-    color: inherit;
-  }
-
-  .ant-tabs {
-    margin-top: 60px;
-    overflow: unset;
-
-    &-bar {
-      border-bottom: none;
-      position: absolute;
-      right: 0;
-      bottom: -50px;
-    }
-
-    &-tab {
-      text-transform: uppercase;
-      color: $pd-text-light;
-
-      &-active {
-        font-weight: bold;
+    .pd-sidebar {
+      padding: 0 10px;
+      background: linear-gradient($pd-background-darker, $pd-background);
+      width: 90px;
+      
+      .rotated-name {
+        bottom: 50px;
         color: inherit;
+        font-weight: bold;
+        font-size: $pd-font-size-md;
+        letter-spacing: 4px;
+        left: -21px;
+        position: absolute;
+        transform: rotate(-90deg);
+      }
+    }
+  
+    .pd-content {
+      flex: 1 1 auto;
+    }
+  
+    header {
+      padding: 20px 0;
+      text-align: right;
 
-        &::after {
-          content: '•';
-          color: $pd-text-dark;
-          font-size: 32px;
-          position: absolute;
-          top: -3px;
-          left: 14px;
+      a {
+        font-weight: bold;
+        margin: 0 20px;
+        text-transform: uppercase;
+      }
+      
+      button {
+        margin-right: 10px;  
+      }
+    }
+  
+    .ant-btn-link {
+      color: inherit;
+    }
+  
+    .ant-tabs {
+      overflow: unset;
+  
+      &-tab {
+        text-transform: uppercase;
+        color: $pd-text-light;
+  
+        &-active {
+          font-weight: bold;
+          color: inherit;
+  
+          &::after {
+            content: '•';
+            color: $pd-text-dark;
+            font-size: 32px;
+            position: absolute;
+            top: -10px;
+            left: 21px;
+          }
+        }
+      }
+      
+      &-nav-scroll {
+        text-align: right;
+      }
+      
+      &-ink-bar {
+        display: none !important;
+      }
+  
+      &-tabpane {
+        height: 600px;
+      }
+  
+      .ant-tabs-right-content {
+  
+        background: linear-gradient(to right, $pd-background-dark, $pd-background);
+      }
+  
+      .tab-1,
+      .tab-2,
+      .tab-3 {
+        padding-top: 60px;
+        padding-left: 40px;
+  
+        div {
+          font-size: 100px;
+          font-weight: bold;
+          letter-spacing: 12px;
+          line-height: 120px;
+          text-transform: uppercase;
+        }
+  
+        p {
+          margin-top: 30px;
+          font-weight: bold;
+        }
+      }
+  
+      .tab-1 {
+        div:nth-child(3) {
+          color: $pd-text-light;
+        }
+      }
+  
+      .tab-2 {
+        text-align: center;
+  
+        div:nth-child(2) {
+          color: $pd-text-light;
+        }
+      }
+  
+      .tab-3 {
+        text-align: right;
+  
+        div:nth-child(4) {
+          color: $pd-text-light;
         }
       }
     }
-    
-    &-nav-scroll {
-      text-align: right;
-    }
-    
-    &-ink-bar {
-      display: none !important;
-    }
 
-    &-tabpane {
-      height: 600px;
-    }
+    .pd-products {
+      background: white;
+      display: flex;
+      width: calc(100vw - 90px);
 
-    .tab-1,
-    .tab-2,
-    .tab-3 {
-      padding-top: 60px;
+      &-item {
+        padding: 60px;
 
-      div {
-        font-size: 100px;
-        font-weight: bold;
-        letter-spacing: 12px;
-        line-height: 120px;
-        text-transform: uppercase;
-      }
+        &-title {
+          font-weight: bold;
+          font-size: 20px;
+          text-transform: uppercase;
+          padding-bottom: 20px;
+        }
 
-      p {
-        margin-top: 30px;
-        font-weight: bold;
+        &-description {
+          color: lightgray;
+        }
       }
     }
 
-    .tab-1 {
-      div:nth-child(3) {
-        color: $pd-text-light;
+    .pd-contact {
+      display: flex;
+      padding: 60px 20px;
+
+      form {
+        background: white;
+        border-radius: 6px;
+        box-shadow: 1px 2px 4px lightgray;
+        flex: 1 1 auto;
+        margin: 20px;
+        padding: 40px 60px;
+
+        h1 {
+          color: $pd-text-dark;
+          letter-spacing: 4px;
+        }
+
+        > div {
+          display: flex;
+          margin-bottom: 20px;
+
+          > div {
+            flex: 1 1 auto;
+            
+            &:first-child {
+              margin-right: 10px;
+            }
+          }
+        }
+
+        label {
+          display: block;
+          font-weight: bold;
+          padding: 10px 0;
+        }
+
+        input, textarea {
+          background-color: $pd-color-gray;
+          border: none;
+          border-radius: 4px;
+          padding: 10px 14px;
+          width: 100%;
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        textarea {
+          height: 180px;
+          margin-bottom: 20px;
+        }
       }
-    }
+      
+      .sidebar {
+        margin: 20px;
 
-    .tab-2 {
-      text-align: center;
-
-      div:nth-child(2) {
-        color: $pd-text-light;
-      }
-    }
-
-    .tab-3 {
-      text-align: right;
-
-      div:nth-child(4) {
-        color: $pd-text-light;
+        .contact-whatsapp {  
+          text-align: center;
+          background: #fafafa; // custom background-color from whatsapp branding
+          border-radius: 6px;
+          box-shadow: 1px 2px 4px lightgray;
+          color: $pd-text-dark;
+          padding-bottom: 20px;
+  
+          img {
+            width: 240px;
+          }
+        }
       }
     }
   }
-
-  footer {
-    align-items: center;
-    display: flex;
-    
-    .social-media,
-    .blog {
-      display: inline-block;
-      text-transform: uppercase;
-    }
-
-    .blog {
-      font-size: 20px;
-      font-weight: bold;
-      margin-left: 400px;
-    }
+  
+  &-footer {
+    background-color: $pd-color-dark-blue;
+    color: $pd-text-light;
+    margin: 0 auto;
+    padding: 20px 0 40px 0;
+    text-align: center;
   }
 }
