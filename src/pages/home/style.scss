@@ -215,7 +215,9 @@ $pd-font-size-lg: 40px;
       }
       
       .sidebar {
+        display: flex;
         margin: 20px;
+        flex-direction: column;
 
         .contact-whatsapp {  
           text-align: center;
@@ -228,6 +230,14 @@ $pd-font-size-lg: 40px;
           img {
             width: 240px;
           }
+        }
+
+        .map-wrapper {
+          border-radius: 6px;
+          box-shadow: 1px 2px 4px lightgray;
+          height: 100%;
+          margin-top: 20px;
+          overflow: hidden;
         }
       }
     }

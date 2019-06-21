@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-
-import { Button, Tabs, Icon } from 'antd';
+import { Button, Tabs } from 'antd';
+import GoogleMapReact from 'google-map-react';
 import { Link } from 'react-router-dom';
 
 import './style.scss';
@@ -106,6 +106,13 @@ class Home extends Component {
                   <img src={`${process.env.PUBLIC_URL}/img/WhatsApp_Logo_1.png`}/>
                   <div>Contact us via WhatsApp!</div>
                   <div>+627878788</div>
+                </div>
+                <div className='map-wrapper'>
+                  <GoogleMapReact
+                    bootstrapURLKeys={{ key: '' }}
+                    defaultCenter={{ lat: -6.174875, lng: 106.790156 }}
+                    defaultZoom={16} >
+                  </GoogleMapReact>
                 </div>
               </div>
             </div>
