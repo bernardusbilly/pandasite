@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Tabs } from 'antd';
+import { Button, Icon, Tabs } from 'antd';
 import GoogleMapReact from 'google-map-react';
 import { Link } from 'react-router-dom';
 
@@ -11,8 +11,12 @@ class Home extends Component {
       <div className='pd-homepage'>
         <div className='pd-homepage-main'>
           <div className='pd-sidebar'>
-            <div className='rotated-name'>
-              <Link to='/'>Pandatech</Link>
+            <div className='pd-sidebar-sticky'>
+              <a href='https://www.instagram.com/pandatech.io/' className='socmed' target='_blank' rel='noopener noreferrer'><Icon type='instagram' style={{ fontSize: '40px' }} /></a>
+              <a href='https://www.facebook.com/pandatech.io' className='socmed' target='_blank' rel='noopener noreferrer'><Icon type='facebook' style={{ fontSize: '40px' }}/></a>
+              <div className='rotated-name'>
+                <Link to='/'>Pandatech</Link>
+              </div>
             </div>
           </div>
           <div className='pd-content'>

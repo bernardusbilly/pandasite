@@ -21,16 +21,28 @@ $pd-font-size-lg: 40px;
       padding: 0 10px;
       background: linear-gradient($pd-background-darker, $pd-background);
       width: 90px;
-      
-      .rotated-name {
-        bottom: 50px;
-        color: inherit;
-        font-weight: bold;
-        font-size: $pd-font-size-md;
-        letter-spacing: 4px;
-        left: -21px;
-        position: absolute;
-        transform: rotate(-90deg);
+
+      &-sticky {
+        height: 100vh;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+
+        .socmed {
+          text-align: center;
+          margin: 20px 0;
+        }
+        
+        .rotated-name {
+          margin-bottom: 50px;
+          margin-top: 200px;
+          color: inherit;
+          font-weight: bold;
+          font-size: $pd-font-size-md;
+          letter-spacing: 4px;
+          position: relative;
+          transform: rotate(-90deg);
+        }
       }
     }
   
