@@ -28,6 +28,13 @@ $pd-font-size-lg: 40px;
         justify-content: flex-end;
         flex-direction: column;
 
+        .home-link {
+          text-align: center;
+          margin: 20px 0;
+          position: relative;
+          top: -350px;
+        }
+
         .socmed {
           text-align: center;
           margin: 20px 0;

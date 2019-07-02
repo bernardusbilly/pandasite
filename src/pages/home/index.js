@@ -3,15 +3,30 @@ import { Button, Icon, Tabs } from 'antd';
 import GoogleMapReact from 'google-map-react';
 import { Link } from 'react-router-dom';
 
+import { PandaSvg } from '../../panda';
+
 import './style.scss';
 
 class Home extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      products: [
+        { title: 'UI/UX Standards', description: 'In ipsum qui officia enim labore ut. Ex excepteur esse anim enim. Lorem veniam nulla veniam magna minim laboris ex exercitation et id.' },
+        { title: 'Web Design', description: 'In ipsum qui officia enim labore ut. Ex excepteur esse anim enim. Lorem veniam nulla veniam magna minim laboris ex exercitation et id.' },
+        { title: 'Mobile iOS & Android', description: 'In ipsum qui officia enim labore ut. Ex excepteur esse anim enim. Lorem veniam nulla veniam magna minim laboris ex exercitation et id.' },
+        { title: 'IoT Development', description: 'In ipsum qui officia enim labore ut. Ex excepteur esse anim enim. Lorem veniam nulla veniam magna minim laboris ex exercitation et id.' },
+      ]
+    }
+  }
   render() {
     return (
       <div className='pd-homepage'>
         <div className='pd-homepage-main'>
           <div className='pd-sidebar'>
             <div className='pd-sidebar-sticky'>
+              <Link to='/' className='home-link'><Icon component={PandaSvg} style={{ fontSize: '40px' }}/></Link>
               <a href='https://www.instagram.com/pandatech.io/' className='socmed' target='_blank' rel='noopener noreferrer'><Icon type='instagram' style={{ fontSize: '40px' }} /></a>
               <a href='https://www.facebook.com/pandatech.io' className='socmed' target='_blank' rel='noopener noreferrer'><Icon type='facebook' style={{ fontSize: '40px' }}/></a>
               <div className='rotated-name'>
@@ -53,38 +68,18 @@ class Home extends Component {
               </Tabs.TabPane>
             </Tabs>
             <div className='pd-products'>
-              <div className='pd-products-item'>
-                <div className='pd-products-item-title'>
-                  UI/UX Standards
-                </div>
-                <div className='pd-products-item-description'>
-                  In ipsum qui officia enim labore ut. Ex excepteur esse anim enim. Lorem veniam nulla veniam magna minim laboris ex exercitation et id.
-                </div>
-              </div>
-              <div className='pd-products-item'>
-                <div className='pd-products-item-title'>
-                  Web Design
-                </div>
-                <div className='pd-products-item-description'>
-                  In ipsum qui officia enim labore ut. Ex excepteur esse anim enim. Lorem veniam nulla veniam magna minim laboris ex exercitation et id.
-                </div>
-              </div>
-              <div className='pd-products-item'>
-                <div className='pd-products-item-title'>
-                  Mobile iOS & Android
-                </div>
-                <div className='pd-products-item-description'>
-                  In ipsum qui officia enim labore ut. Ex excepteur esse anim enim. Lorem veniam nulla veniam magna minim laboris ex exercitation et id.
-                </div>
-              </div>
-              <div className='pd-products-item'>
-                <div className='pd-products-item-title'>
-                  IoT Development
-                </div>
-                <div className='pd-products-item-description'>
-                  In ipsum qui officia enim labore ut. Ex excepteur esse anim enim. Lorem veniam nulla veniam magna minim laboris ex exercitation et id.
-                </div>
-              </div>
+              { this.state.products.map(product => {
+                return (
+                  <div className='pd-products-item'>
+                    <div className='pd-products-item-title'>
+                      { product.title }
+                    </div>
+                    <div className='pd-products-item-description'>
+                      { product.description }
+                    </div>
+                  </div>
+                )
+              })}
             </div>
             <div className='pd-contact'>
               <form>
