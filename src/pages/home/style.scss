@@ -121,8 +121,24 @@ $pd-font-size-lg: 40px;
           }
         }
 
-        .footer {
+        &-footer {
+          background: linear-gradient($pd-background, $pd-background-dark); 
+          margin-top: 100px;
+          padding: 40px 0;
           text-align: center;
+
+          .title {
+            font-size: 40px;
+            font-weight: bold;
+          }
+
+          .subtitle {
+            color: $pd-text-light;
+          }
+
+          .ant-btn {
+            margin-top: 40px;
+          }
         }
       }
     }

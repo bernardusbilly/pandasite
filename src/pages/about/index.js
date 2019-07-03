@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Icon } from 'antd';
+import { Button, Icon } from 'antd';
 import { Link } from 'react-router-dom';
 
 import { PandaSvg } from '../../panda';
@@ -48,6 +48,15 @@ class Home extends Component {
                   <div className='team-photo'/>
                 </div>
               </div>
+            </div>
+            <div className='pd-content-about-footer'>
+              <div className='title'>
+                Let's make something great together
+              </div>
+              <div className='subtitle'>
+                Get in touch with us and send some basic info for a quick quote
+              </div>
+              <Button>Start A Project</Button>
             </div>
           </div>
         </div>
