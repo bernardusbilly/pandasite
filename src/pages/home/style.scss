@@ -1,6 +1,5 @@
-$pd-background: #f7f2ee;
-$pd-background-dark: #f3ece4;
-$pd-background-darker: #dbccc4;
+$pd-background: #F9FAFB;
+$pd-background-dark: #F6F6F6;
 $pd-color-dark-blue: #001e32;
 $pd-color-gray: #f1f1f1;
 
@@ -15,13 +14,15 @@ $pd-font-size-md: 20px;
 $pd-font-size-lg: 40px; 
 
 .pd-homepage {
+  background: $pd-background-dark;
+
   &-main {
     color: $pd-text-dark;
     display: flex;
   
     .pd-sidebar {
       padding: 0 10px;
-      background: linear-gradient($pd-background-darker, $pd-background);
+      background: linear-gradient($pd-background, $pd-background-dark);
       width: 90px;
 
       &-sticky {
@@ -178,9 +179,13 @@ $pd-font-size-lg: 40px;
       &-tabpane {
         height: 600px;
       }
+
+      .ant-tabs-right-bar {
+        border-left: 0;
+      }
   
       .ant-tabs-right-content {
-  
+        border-right: 0;
         background: linear-gradient(to right, $pd-background-dark, $pd-background);
       }
   
