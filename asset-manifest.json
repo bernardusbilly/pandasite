@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/pandasite/build/static/css/main.e335814d.chunk.css",
+    "main.css": "/pandasite/build/static/css/main.1f2a7975.chunk.css",
     "main.js": "/pandasite/build/static/js/main.881d3015.chunk.js",
     "main.js.map": "/pandasite/build/static/js/main.881d3015.chunk.js.map",
     "runtime~main.js": "/pandasite/build/static/js/runtime~main.335e42e0.js",
@@ -9,9 +9,9 @@
     "static/js/2.2c4c2ddc.chunk.js": "/pandasite/build/static/js/2.2c4c2ddc.chunk.js",
     "static/js/2.2c4c2ddc.chunk.js.map": "/pandasite/build/static/js/2.2c4c2ddc.chunk.js.map",
     "index.html": "/pandasite/build/index.html",
-    "precache-manifest.e0b5dd78e8be30bfdeda28d56a6c8ac7.js": "/pandasite/build/precache-manifest.e0b5dd78e8be30bfdeda28d56a6c8ac7.js",
+    "precache-manifest.b169e4c68f0d8a7c10b5f0bff3ad3378.js": "/pandasite/build/precache-manifest.b169e4c68f0d8a7c10b5f0bff3ad3378.js",
     "service-worker.js": "/pandasite/build/service-worker.js",
     "static/css/2.128fc69f.chunk.css.map": "/pandasite/build/static/css/2.128fc69f.chunk.css.map",
-    "static/css/main.e335814d.chunk.css.map": "/pandasite/build/static/css/main.e335814d.chunk.css.map"
+    "static/css/main.1f2a7975.chunk.css.map": "/pandasite/build/static/css/main.1f2a7975.chunk.css.map"
   }
 }
