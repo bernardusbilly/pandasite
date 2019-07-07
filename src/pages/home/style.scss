@@ -46,89 +46,6 @@
   
     .pd-content {
       flex: 1 1 auto;
-
-      &-about {
-        .page-title {
-          font-size: 60px;
-          font-weight: bold;
-          letter-spacing: 4px;
-          padding: 40px;
-          text-transform: uppercase;
-        }
-
-        .content-wrapper {
-          font-size: 16px;
-          padding: 0 100px; 
-          
-          h1 {
-            padding-top: 60px;
-            color: $pd-text-dark-2;
-          }
-  
-          .team-wrapper {
-            position: relative;
-            margin-top: 100px;
-
-            .team-photo {
-              display: inline-block;
-              margin: 20px;
-              width: 162px;
-              height: 200px;
-              border-radius: 4px;
-              background-color: #DDE7EE;
-            }
-            
-            .team-introduction {
-              display: inline-block;
-              position: relative;
-              margin: 20px;
-              width: 162px;
-              height: 200px;
-              border-radius: 4px;
-
-              &-title, &-subtitle {
-                position: absolute;
-                text-align: right;
-                width: 100%;
-              }
-
-              &-title {
-                top: 20px;
-                font-size: 30px;
-                line-height: 40px;
-                text-transform: uppercase;
-                font-weight: bold;
-                letter-spacing: 4px;
-              }
-
-              &-subtitle {
-                bottom: 0;
-                color: $pd-text-dark-2;
-              }
-            }
-          }
-        }
-
-        &-footer {
-          background: linear-gradient($pd-background, $pd-background-dark); 
-          margin-top: 100px;
-          padding: 40px 0;
-          text-align: center;
-
-          .title {
-            font-size: 40px;
-            font-weight: bold;
-          }
-
-          .subtitle {
-            color: $pd-text-light;
-          }
-
-          .ant-btn {
-            margin-top: 40px;
-          }
-        }
-      }
     }
   
     header {
@@ -335,6 +252,89 @@
           height: 100%;
           margin-top: 20px;
           overflow: hidden;
+        }
+      }
+    }
+    
+    .pd-about {
+      .page-title {
+        font-size: 60px;
+        font-weight: bold;
+        letter-spacing: 4px;
+        padding: 40px;
+        text-transform: uppercase;
+      }
+
+      .content-wrapper {
+        font-size: 16px;
+        padding: 0 100px; 
+        
+        h1 {
+          padding-top: 60px;
+          color: $pd-text-dark-2;
+        }
+
+        .team-wrapper {
+          position: relative;
+          margin-top: 100px;
+
+          .team-photo {
+            display: inline-block;
+            margin: 20px;
+            width: 162px;
+            height: 200px;
+            border-radius: 4px;
+            background-color: #DDE7EE;
+          }
+          
+          .team-introduction {
+            display: inline-block;
+            position: relative;
+            margin: 20px;
+            width: 162px;
+            height: 200px;
+            border-radius: 4px;
+
+            &-title, &-subtitle {
+              position: absolute;
+              text-align: right;
+              width: 100%;
+            }
+
+            &-title {
+              top: 20px;
+              font-size: 30px;
+              line-height: 40px;
+              text-transform: uppercase;
+              font-weight: bold;
+              letter-spacing: 4px;
+            }
+
+            &-subtitle {
+              bottom: 0;
+              color: $pd-text-dark-2;
+            }
+          }
+        }
+      }
+
+      &-footer {
+        background: linear-gradient($pd-background, $pd-background-dark); 
+        margin-top: 100px;
+        padding: 40px 0;
+        text-align: center;
+
+        .title {
+          font-size: 40px;
+          font-weight: bold;
+        }
+
+        .subtitle {
+          color: $pd-text-light;
+        }
+
+        .ant-btn {
+          margin-top: 40px;
         }
       }
     }
