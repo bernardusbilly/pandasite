@@ -81,40 +81,6 @@ class Home extends Component {
                 )
               })}
             </div>
-            <div className='pd-contact'>
-              <form>
-                <h1>
-                  Contact Us!
-                </h1>
-                <div>
-                  <div>
-                    <label htmlFor='name'>Name</label>
-                    <input id='name' type='name' />
-                  </div>
-                  <div>
-                    <label htmlFor='email'>Email</label>
-                    <input id='email' type='email' />
-                  </div>
-                </div>
-                <label htmlFor='message'>Message</label>
-                <textarea id='message'/>
-                <Button htmlType='submit'>Submit</Button>
-              </form>
-              <div className='sidebar'>
-                <div className='contact-whatsapp'>
-                  <img src={`${process.env.PUBLIC_URL}/img/WhatsApp_Logo_1.png`}/>
-                  <div>Contact us via WhatsApp!</div>
-                  <div>+627878788</div>
-                </div>
-                <div className='map-wrapper'>
-                  <GoogleMapReact
-                    bootstrapURLKeys={{ key: '' }}
-                    defaultCenter={{ lat: -6.174875, lng: 106.790156 }}
-                    defaultZoom={16} >
-                  </GoogleMapReact>
-                </div>
-              </div>
-            </div>
             <div id='about' className='pd-about'>
               <div className='page-title'>About Us</div>
               <div className='content-wrapper'>
@@ -152,7 +118,41 @@ class Home extends Component {
                 <div className='subtitle'>
                   Get in touch with us and send some basic info for a quick quote
                 </div>
-                <Button>Start A Project</Button>
+                <Button href='#contact'>Start A Project</Button>
+              </div>
+            </div>
+            <div id='contact' className='pd-contact'>
+              <form>
+                <h1>
+                  Contact Us!
+                </h1>
+                <div>
+                  <div>
+                    <label htmlFor='name'>Name</label>
+                    <input id='name' type='name' />
+                  </div>
+                  <div>
+                    <label htmlFor='email'>Email</label>
+                    <input id='email' type='email' />
+                  </div>
+                </div>
+                <label htmlFor='message'>Message</label>
+                <textarea id='message'/>
+                <Button htmlType='submit'>Submit</Button>
+              </form>
+              <div className='sidebar'>
+                <div className='contact-whatsapp'>
+                  <img src={`${process.env.PUBLIC_URL}/img/WhatsApp_Logo_1.png`}/>
+                  <div>Contact us via WhatsApp!</div>
+                  <div>+627878788</div>
+                </div>
+                <div className='map-wrapper'>
+                  <GoogleMapReact
+                    bootstrapURLKeys={{ key: '' }}
+                    defaultCenter={{ lat: -6.174875, lng: 106.790156 }}
+                    defaultZoom={16} >
+                  </GoogleMapReact>
+                </div>
               </div>
             </div>
           </div>
