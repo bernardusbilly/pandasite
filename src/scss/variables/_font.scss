@@ -7,3 +7,10 @@ $pd-font-size-xs: 10px;
 $pd-font-size-sm: 14px; 
 $pd-font-size-md: 20px; 
 $pd-font-size-lg: 40px; 
+
+@font-face {
+  font-family: 'Brandon';
+  src: url('../../fonts/Brandon_blk.otf');
+  font-weight: normal;
+  font-style: normal;
+}

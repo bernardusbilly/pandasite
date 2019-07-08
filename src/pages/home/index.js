@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import { Button, Icon, Tabs } from 'antd';
 import GoogleMapReact from 'google-map-react';
-import { Link } from 'react-router-dom';
-
-import { PandaSvg } from '../../panda';
 
 import './style.scss';
 
@@ -26,7 +23,7 @@ class Home extends Component {
         <div className='pd-homepage-main'>
           <div className='pd-sidebar'>
             <div className='pd-sidebar-sticky'>
-              <a href='#home' className='home-link'><Icon component={PandaSvg} style={{ fontSize: '40px' }}/></a>
+              <a href='#home' className='home-link'><img src={`${process.env.PUBLIC_URL}/img/Panda_Logo.png`}/></a>
               <a href='https://www.instagram.com/pandatech.io/' className='socmed' target='_blank' rel='noopener noreferrer'><Icon type='instagram' style={{ fontSize: '40px' }} /></a>
               <a href='https://www.facebook.com/pandatech.io' className='socmed' target='_blank' rel='noopener noreferrer'><Icon type='facebook' style={{ fontSize: '40px' }}/></a>
               <div className='rotated-name'>
@@ -111,6 +108,7 @@ class Home extends Component {
                   </div>
                 </div>
               </div>
+              <img className='communication' src={`${process.env.PUBLIC_URL}/img/Communication.png`}/>
               <div className='pd-about-footer'>
                 <div className='title'>
                   Let's make something great together

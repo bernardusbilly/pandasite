@@ -9,6 +9,7 @@
     display: flex;
   
     .pd-sidebar {
+      position: fixed;
       padding: 0 10px;
       background: linear-gradient($pd-background, $pd-background-dark);
       width: 90px;
@@ -24,6 +25,10 @@
           margin: 20px 0;
           position: relative;
           top: -350px;
+
+          img {
+            width: 40px;
+          }
         }
 
         .socmed {
@@ -46,6 +51,7 @@
   
     .pd-content {
       flex: 1 1 auto;
+      margin-left: 90px;
     }
   
     header {
@@ -316,6 +322,12 @@
             }
           }
         }
+      }
+
+      .communication {
+        position: relative;
+        top: -40px;
+        width: 100%;
       }
 
       &-footer {
