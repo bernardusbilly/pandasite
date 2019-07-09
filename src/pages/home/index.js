@@ -34,7 +34,7 @@ class Home extends Component {
           <div className='pd-content'>
             <header>
               <a href='#about'>About</a>
-              <a href='#services'>Services</a>
+              <a href='#products'>Services</a>
               <a href='#contact'>Contact</a>
               <Button type='link' icon='menu'/>
             </header>
@@ -64,7 +64,7 @@ class Home extends Component {
                 </p>
               </Tabs.TabPane>
             </Tabs>
-            <div className='pd-products'>
+            <div id='products' className='pd-products'>
               { this.state.products.map(product => {
                 return (
                   <div className='pd-products-item'>
@@ -117,6 +117,43 @@ class Home extends Component {
                   Get in touch with us and send some basic info for a quick quote
                 </div>
                 <Button href='#contact'>Start A Project</Button>
+              </div>
+            </div>
+            <div id='traction' className='pd-traction'>
+              <h1>
+                Past Works
+              </h1>
+              <div className='pd-traction-wrapper'>
+                <div className='pd-traction-wrapper-company'>
+                  <img src={`${process.env.PUBLIC_URL}/img/traction/ubiklan.png`}/>
+                </div>
+                <div className='pd-traction-wrapper-company'>
+                  <img src={`${process.env.PUBLIC_URL}/img/traction/belipart.png`}/>
+                </div>
+                <div className='pd-traction-wrapper-company'>
+                  <img src={`${process.env.PUBLIC_URL}/img/traction/satu-data-indonesia.png`}/>
+                </div>
+                <div className='pd-traction-wrapper-company'>
+                  <img src={`${process.env.PUBLIC_URL}/img/traction/kantor-staf-presiden.png`}/>
+                </div>
+                <div className='pd-traction-wrapper-company'>
+                  <img src={`${process.env.PUBLIC_URL}/img/traction/happy5.png`}/>
+                </div>
+                <div className='pd-traction-wrapper-company'>
+                  <img src={`${process.env.PUBLIC_URL}/img/traction/societo-generale.png`}/>
+                </div>
+                <div className='pd-traction-wrapper-company'>
+                  <img src={`${process.env.PUBLIC_URL}/img/traction/kubox.png`}/>
+                </div>
+                <div className='pd-traction-wrapper-company'>
+                  <img src={`${process.env.PUBLIC_URL}/img/traction/trader-wave.png`}/>
+                </div>
+                <div className='pd-traction-wrapper-company'>
+                  <img src={`${process.env.PUBLIC_URL}/img/traction/little-juice.png`}/>
+                </div>
+                <div className='pd-traction-wrapper-company'>
+                  <img src={`${process.env.PUBLIC_URL}/img/traction/ban-ban.png`}/>
+                </div>
               </div>
             </div>
             <div id='contact' className='pd-contact'>
