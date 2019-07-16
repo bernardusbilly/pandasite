@@ -22,6 +22,7 @@ class Home extends Component {
       <div className='pd-homepage'>
         <div className='pd-homepage-main'>
           <div id='home' className='pd-content' style={{ marginLeft: 0 }}>
+            <img src={`${process.env.PUBLIC_URL}/img/Panda_Logo.png`}/>
             <div>We are<br/>revamping<br/>our website</div>
             <p>
               Greater things are yet to come!

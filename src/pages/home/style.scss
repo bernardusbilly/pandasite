@@ -57,12 +57,17 @@
       flex: 1 1 auto;
       margin-left: 90px;
 
+      img {
+        width: 50px;
+        margin: 40px;
+      }
+
       div {
         font-size: 100px;
         font-weight: bold;
         letter-spacing: 12px;
         line-height: 120px;
-        padding: 200px 40px 0 40px;
+        padding: 100px 40px 0 40px;
         text-transform: uppercase;
       }
 
