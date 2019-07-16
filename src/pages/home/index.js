@@ -10,10 +10,10 @@ class Home extends Component {
 
     this.state = {
       products: [
-        { title: 'UI/UX Standards', description: 'In ipsum qui officia enim labore ut. Ex excepteur esse anim enim. Lorem veniam nulla veniam magna minim laboris ex exercitation et id.' },
-        { title: 'Web Design', description: 'In ipsum qui officia enim labore ut. Ex excepteur esse anim enim. Lorem veniam nulla veniam magna minim laboris ex exercitation et id.' },
-        { title: 'Mobile iOS & Android', description: 'In ipsum qui officia enim labore ut. Ex excepteur esse anim enim. Lorem veniam nulla veniam magna minim laboris ex exercitation et id.' },
-        { title: 'IoT Development', description: 'In ipsum qui officia enim labore ut. Ex excepteur esse anim enim. Lorem veniam nulla veniam magna minim laboris ex exercitation et id.' },
+        { title: 'UI/UX Standards', description: '88% of customers are less likely to return to a site after a bad experience. Design and experience are foundation to digital success.' },
+        { title: 'Web Design', description: 'There are 4.4 billion people who are using the internet. Make sure your business is there so you are not leaving any money on the table.' },
+        { title: 'Mobile iOS & Android', description: 'In Indonesia, mobile penetration is 91% of the total internet users. Meaning your business could utilize this growth for sure.' },
+        { title: 'Big Data', description: 'The gold of the 21st century. Excellent data management and analytics will bring your business to the next level.' },
       ]
     }
   }
@@ -27,11 +27,11 @@ class Home extends Component {
               <a href='https://www.instagram.com/pandatech.io/' className='socmed' target='_blank' rel='noopener noreferrer'><Icon type='instagram' style={{ fontSize: '40px' }} /></a>
               <a href='https://www.facebook.com/pandatech.io' className='socmed' target='_blank' rel='noopener noreferrer'><Icon type='facebook' style={{ fontSize: '40px' }}/></a>
               <div className='rotated-name'>
-                <a to='#home'>Pandatech</a>
+                <a href='#home'>Pandatech</a>
               </div>
             </div>
           </div>
-          <div className='pd-content'>
+          <div id='home' className='pd-content'>
             <header>
               <a href='#about'>About</a>
               <a href='#products'>Services</a>
@@ -82,16 +82,27 @@ class Home extends Component {
               <div className='page-title'>About Us</div>
               <div className='content-wrapper'>
                 <span>
-                  Cillum in veniam non excepteur anim excepteur cillum. Dolore sit et irure ullamco esse dolore proident duis veniam id. Anim occaecat pariatur sit irure excepteur eiusmod labore. 
+                  <p>
+                    We are a team of collaborators, thinkers, designer and creatives who share the same passion in product development and technologies. With more than 30 years of combined experience in the tech industry, we understand your pain points and strive to bring your business to the next level.
+                  </p>
+                  <p>
+                    Our team are UC Berkeley, Stanford and Purdue graduates who have worked in Silicon Valley, Singapore and China. We take great pride in our work and ensure the best result is delivered. 
+                  </p>
                 </span>
                 <h1>Our Promise</h1>
                 <span>
-                  Non proident sunt esse laborum. Reprehenderit dolore laboris pariatur laborum ea minim nisi minim labore nisi. 
+                  We only deliver high quality work. Your satisfaction is at the core of our work.
                 </span>
                 <div className='team-wrapper'>
                   <div>
-                    <div className='team-photo'/>
-                    <div className='team-photo'/>
+                    <div className='team-photo'>
+                      <img alt='Glorio' src={`${process.env.PUBLIC_URL}/img/founders/glorio.jpg`}/>
+                      <div className='display-name'>Glorio Yulianto</div>
+                    </div>
+                    <div className='team-photo'>
+                      <img alt='Michael' src={`${process.env.PUBLIC_URL}/img/founders/michael.jpg`}/>
+                      <div className='display-name'>Michael Jagadpramana</div>
+                    </div>
                     <div className='team-introduction'>
                       <div className='team-introduction-title'>
                         Meet The Team
@@ -102,7 +113,10 @@ class Home extends Component {
                     </div>
                   </div>
                   <div>
-                    <div className='team-photo'/>
+                    <div className='team-photo'>
+                      <img alt='Billy' src={`${process.env.PUBLIC_URL}/img/founders/billy.jpg`}/>
+                      <div className='display-name'>Billy Tjiptoning</div>
+                    </div>
                     <div className='team-photo'/>
                     <div className='team-photo'/>
                   </div>
@@ -157,22 +171,23 @@ class Home extends Component {
               </div>
             </div>
             <div id='contact' className='pd-contact'>
-              <form>
+              <form action="https://formspree.io/contact@pandatech.io" method="POST">
                 <h1>
                   Contact Us!
                 </h1>
+                <p> Sending an email is free, redoing a tech work is not. Take the minute to write to us, and let our award winning team reaches out to you.</p>
                 <div>
                   <div>
                     <label htmlFor='name'>Name</label>
-                    <input id='name' type='name' />
+                    <input id='name' type='name' name='name'/>
                   </div>
                   <div>
                     <label htmlFor='email'>Email</label>
-                    <input id='email' type='email' />
+                    <input id='email' type='email' name='email'/>
                   </div>
                 </div>
                 <label htmlFor='message'>Message</label>
-                <textarea id='message'/>
+                <textarea id='message' name='message'/>
                 <Button htmlType='submit'>Submit</Button>
               </form>
               <div className='sidebar'>
@@ -181,13 +196,13 @@ class Home extends Component {
                   <div>Contact us via WhatsApp!</div>
                   <div>+627878788</div>
                 </div>
-                <div className='map-wrapper'>
-                  <GoogleMapReact
-                    bootstrapURLKeys={{ key: '' }}
-                    defaultCenter={{ lat: -6.174875, lng: 106.790156 }}
-                    defaultZoom={16} >
-                  </GoogleMapReact>
-                </div>
+                <a 
+                  className='map-wrapper' 
+                  href="https://www.google.com/maps/place/NEO+SOHO+Podomoro+City+Central+Park/@-6.1748171,106.7894695,18.04z/data=!4m12!1m6!3m5!1s0x0:0xcb9754290990043d!2sRoyal+Mediterania+Garden+Residences,+Tower+Lavender!8m2!3d-6.1764236!4d106.7892746!3m4!1s0x2e69f65ee1c07a31:0x2c4c67f4d94e8e65!8m2!3d-6.1748323!4d106.7899324?hl=en-US"
+                  target="_blank"
+                  >
+                  <img src={`${process.env.PUBLIC_URL}/img/HeadquarterMap.png`}/>
+                </a>
               </div>
             </div>
           </div>

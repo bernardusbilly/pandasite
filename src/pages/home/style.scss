@@ -255,9 +255,13 @@
         .map-wrapper {
           border-radius: 6px;
           box-shadow: 1px 2px 4px lightgray;
-          height: 100%;
           margin-top: 20px;
           overflow: hidden;
+          width: 240px;
+          
+          img {
+            width: 100%;
+          }
         }
       }
     }
@@ -309,12 +313,36 @@
           margin-top: 100px;
 
           .team-photo {
-            display: inline-block;
-            margin: 20px;
-            width: 162px;
-            height: 200px;
             border-radius: 4px;
             background-color: #DDE7EE;
+            display: inline-block;
+            margin: 20px;
+            overflow: hidden;
+            position: relative;
+            height: 200px;
+            width: 162px;
+            
+            img {
+              width: 100%
+            }
+
+            .display-name {
+              background: rgba(0,0,0,0.5);
+              bottom: 0;
+              color: $pd-text-light;
+              display: none;
+              position: absolute;
+              right: 0;
+              text-align: center;
+              padding: 10px;
+              width: 100%;
+            }
+
+            &:hover {
+              .display-name {
+                display: block;
+              }
+            }
           }
           
           .team-introduction {
