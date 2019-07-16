@@ -3,6 +3,10 @@
 
 .pd-homepage {
   background: $pd-background-dark;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
 
   &-main {
     color: $pd-text-dark;
@@ -52,6 +56,19 @@
     .pd-content {
       flex: 1 1 auto;
       margin-left: 90px;
+
+      div {
+        font-size: 100px;
+        font-weight: bold;
+        letter-spacing: 12px;
+        line-height: 120px;
+        padding: 200px 40px 0 40px;
+        text-transform: uppercase;
+      }
+
+      p {
+        padding: 40px;
+      }
     }
   
     header {
@@ -121,14 +138,6 @@
       .tab-3 {
         padding-top: 60px;
         padding-left: 40px;
-  
-        div {
-          font-size: 100px;
-          font-weight: bold;
-          letter-spacing: 12px;
-          line-height: 120px;
-          text-transform: uppercase;
-        }
   
         p {
           margin-top: 30px;
@@ -410,5 +419,6 @@
     margin: 0 auto;
     padding: 20px 0 40px 0;
     text-align: center;
+    width: 100%;
   }
 }
