@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/pandasite/build/static/css/main.1f2a7975.chunk.css",
-    "main.js": "/pandasite/build/static/js/main.881d3015.chunk.js",
-    "main.js.map": "/pandasite/build/static/js/main.881d3015.chunk.js.map",
+    "main.css": "/pandasite/build/static/css/main.0d0eaefa.chunk.css",
+    "main.js": "/pandasite/build/static/js/main.4d86c95a.chunk.js",
+    "main.js.map": "/pandasite/build/static/js/main.4d86c95a.chunk.js.map",
     "runtime~main.js": "/pandasite/build/static/js/runtime~main.335e42e0.js",
     "runtime~main.js.map": "/pandasite/build/static/js/runtime~main.335e42e0.js.map",
     "static/css/2.128fc69f.chunk.css": "/pandasite/build/static/css/2.128fc69f.chunk.css",
-    "static/js/2.2c4c2ddc.chunk.js": "/pandasite/build/static/js/2.2c4c2ddc.chunk.js",
-    "static/js/2.2c4c2ddc.chunk.js.map": "/pandasite/build/static/js/2.2c4c2ddc.chunk.js.map",
+    "static/js/2.40e19372.chunk.js": "/pandasite/build/static/js/2.40e19372.chunk.js",
+    "static/js/2.40e19372.chunk.js.map": "/pandasite/build/static/js/2.40e19372.chunk.js.map",
     "index.html": "/pandasite/build/index.html",
-    "precache-manifest.b169e4c68f0d8a7c10b5f0bff3ad3378.js": "/pandasite/build/precache-manifest.b169e4c68f0d8a7c10b5f0bff3ad3378.js",
+    "precache-manifest.8f598d4e97a279c195195611c3f8e4fc.js": "/pandasite/build/precache-manifest.8f598d4e97a279c195195611c3f8e4fc.js",
     "service-worker.js": "/pandasite/build/service-worker.js",
     "static/css/2.128fc69f.chunk.css.map": "/pandasite/build/static/css/2.128fc69f.chunk.css.map",
-    "static/css/main.1f2a7975.chunk.css.map": "/pandasite/build/static/css/main.1f2a7975.chunk.css.map"
+    "static/css/main.0d0eaefa.chunk.css.map": "/pandasite/build/static/css/main.0d0eaefa.chunk.css.map",
+    "static/media/style.scss": "/pandasite/build/static/media/Brandon_blk.c10f15f1.otf"
   }
 }
