@@ -117,8 +117,14 @@ class Home extends Component {
                       <img alt='Billy' src={`${process.env.PUBLIC_URL}/img/founders/billy.jpg`}/>
                       <div className='display-name'>Billy Tjiptoning</div>
                     </div>
-                    <div className='team-photo'/>
-                    <div className='team-photo'/>
+                    <div className='team-photo'>
+                      <img alt='Rico' src={`${process.env.PUBLIC_URL}/img/founders/rico.jpg`}/>
+                      <div className='display-name'>Rico Ardisyah</div>
+                    </div>
+                    <div className='team-photo'>
+                      <img alt='Teddy' src={`${process.env.PUBLIC_URL}/img/founders/teddy.jpg`}/>
+                      <div className='display-name'>Teddy The</div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -134,9 +140,9 @@ class Home extends Component {
               </div>
             </div>
             <div id='traction' className='pd-traction'>
-              <h1>
+              <div className='header'>
                 Past Works
-              </h1>
+              </div>
               <div className='pd-traction-wrapper'>
                 <div className='pd-traction-wrapper-company'>
                   <img src={`${process.env.PUBLIC_URL}/img/traction/ubiklan.png`}/>

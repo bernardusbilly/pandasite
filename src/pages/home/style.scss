@@ -3,6 +3,8 @@
 
 .pd-homepage {
   background: $pd-background-dark;
+  font-family: 'brandon', sans-serif;
+  font-size: 16px;
 
   &-main {
     color: $pd-text-dark;
@@ -12,7 +14,7 @@
       position: fixed;
       padding: 0 10px;
       background: linear-gradient($pd-background, $pd-background-dark);
-      width: 90px;
+      width: 80px;
 
       &-sticky {
         height: 100vh;
@@ -131,8 +133,8 @@
         }
   
         p {
-          margin-top: 30px;
           font-weight: bold;
+          margin-top: 30px;
         }
       }
   
@@ -194,6 +196,7 @@
 
         h1 {
           color: $pd-text-dark;
+          font-weight: bold;
           letter-spacing: 4px;
         }
 
@@ -267,6 +270,14 @@
     }
 
     .pd-traction {
+
+      .header {
+        font-weight: bold;
+        font-size: 20px;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+      }
+
       &-wrapper {
         display: flex;
         flex-wrap: wrap;
@@ -300,12 +311,12 @@
       }
 
       .content-wrapper {
-        font-size: 16px;
         padding: 0 100px; 
         
         h1 {
+          color: $pd-text-light;
+          font-weight: bold;
           padding-top: 60px;
-          color: $pd-text-dark-2;
         }
 
         .team-wrapper {
@@ -370,7 +381,7 @@
 
             &-subtitle {
               bottom: 0;
-              color: $pd-text-dark-2;
+              color: $pd-text-light;
             }
           }
         }
