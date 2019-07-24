@@ -14,7 +14,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "git branch -D gh-pages"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -34,5 +35,5 @@
   "devDependencies": {
     "node-sass": "^4.12.0"
   },
-  "homepage": "http://bernardusbilly.com/pandasite/build"
+  "homepage": "http://pandatechnology.co/"
 }
