@@ -1,0 +1,448 @@
+@import "scss/variables/color.scss";
+@import "scss/variables/font.scss";
+
+.pd-homepage {
+  background: $pd-background-dark;
+  font-family: "brandon", sans-serif;
+  font-size: 16px;
+
+  &-main {
+    color: $pd-text-dark;
+    display: flex;
+
+    .logo {
+      img {
+        width: 100%;
+      }
+    }
+
+    .pd-sidebar {
+      position: fixed;
+      padding: 0 10px;
+      background: linear-gradient($pd-background, $pd-background-dark);
+      width: 80px;
+
+      &-sticky {
+        height: 100vh;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+
+        .home-link {
+          text-align: center;
+          margin: 20px 0;
+          position: relative;
+          top: -350px;
+
+          img {
+            width: 40px;
+          }
+        }
+
+        .socmed {
+          text-align: center;
+          margin: 20px 0;
+        }
+
+        .rotated-name {
+          margin-bottom: 50px;
+          margin-top: 200px;
+          color: inherit;
+          font-weight: bold;
+          font-size: $pd-font-size-md;
+          letter-spacing: 4px;
+          position: relative;
+          transform: rotate(-90deg);
+        }
+      }
+    }
+
+    .pd-content {
+      flex: 1 1 auto;
+
+      .header {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+
+        .logo {
+          width: 36px;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    header {
+      padding: 20px 0;
+      text-align: right;
+
+      a {
+        font-weight: bold;
+        margin: 0 20px;
+        text-transform: uppercase;
+      }
+
+      button {
+        margin-right: 10px;
+      }
+    }
+
+    .ant-btn-link {
+      color: inherit;
+    }
+
+    .ant-tabs {
+      overflow: unset;
+
+      &-tab {
+        text-transform: uppercase;
+        color: $pd-text-light;
+
+        &-active {
+          font-weight: bold;
+          color: inherit;
+
+          &::after {
+            content: "•";
+            color: $pd-text-dark;
+            font-size: 32px;
+            position: absolute;
+            top: -10px;
+            left: 21px;
+          }
+        }
+      }
+
+      &-nav-scroll {
+        text-align: right;
+      }
+
+      &-ink-bar {
+        display: none !important;
+      }
+
+      &-tabpane {
+        padding-bottom: 100px;
+      }
+
+      .ant-tabs-right-bar {
+        border-left: 0;
+      }
+
+      .ant-tabs-right-content {
+        border-right: 0;
+        background: linear-gradient(
+          to right,
+          $pd-background-dark,
+          $pd-background
+        );
+      }
+
+      .tab-1,
+      .tab-2,
+      .tab-3 {
+        padding-top: 60px;
+        padding-left: 40px;
+
+        div {
+          font-size: 100px;
+          font-weight: bold;
+          letter-spacing: 12px;
+          line-height: 120px;
+          text-transform: uppercase;
+        }
+
+        p {
+          font-weight: bold;
+          margin-top: 30px;
+        }
+      }
+
+      .tab-1 {
+        div:nth-child(3) {
+          color: $pd-text-light;
+        }
+      }
+
+      .tab-2 {
+        text-align: center;
+
+        div:nth-child(2) {
+          color: $pd-text-light;
+        }
+      }
+
+      .tab-3 {
+        text-align: right;
+
+        div:nth-child(4) {
+          color: $pd-text-light;
+        }
+      }
+    }
+
+    .pd-products {
+      background: white;
+      display: flex;
+
+      &-item {
+        padding: 60px;
+
+        &-title {
+          font-weight: bold;
+          font-size: 20px;
+          text-transform: uppercase;
+          padding-bottom: 20px;
+        }
+
+        &-description {
+          color: lightgray;
+        }
+      }
+    }
+
+    .pd-contact {
+      display: flex;
+      padding: 60px 20px;
+
+      form {
+        background: white;
+        border-radius: 6px;
+        box-shadow: 1px 2px 4px lightgray;
+        flex: 1 1 auto;
+        margin: 20px;
+        padding: 40px 60px;
+
+        h1 {
+          color: $pd-text-dark;
+          font-weight: bold;
+          letter-spacing: 4px;
+        }
+
+        > div {
+          display: flex;
+          margin-bottom: 20px;
+
+          > div {
+            flex: 1 1 auto;
+
+            &:first-child {
+              margin-right: 10px;
+            }
+          }
+        }
+
+        label {
+          display: block;
+          font-weight: bold;
+          padding: 10px 0;
+        }
+
+        input,
+        textarea {
+          background-color: $pd-color-gray;
+          border: none;
+          border-radius: 4px;
+          padding: 10px 14px;
+          width: 100%;
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        textarea {
+          height: 180px;
+          margin-bottom: 20px;
+        }
+      }
+
+      .sidebar {
+        display: flex;
+        margin: 20px;
+        flex-direction: column;
+
+        .contact-whatsapp {
+          text-align: center;
+          background: #fafafa; // custom background-color from whatsapp branding
+          border-radius: 6px;
+          box-shadow: 1px 2px 4px lightgray;
+          color: $pd-text-dark;
+          padding-bottom: 20px;
+
+          img {
+            width: 240px;
+          }
+        }
+
+        .map-wrapper {
+          border-radius: 6px;
+          box-shadow: 1px 2px 4px lightgray;
+          margin-top: 20px;
+          overflow: hidden;
+          width: 240px;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .pd-traction {
+      .header {
+        font-weight: bold;
+        font-size: 20px;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+      }
+
+      &-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+
+        &-company {
+          background: white;
+          border-radius: 7px;
+          box-shadow: 1px 2px 4px $pd-color-gray;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin: 20px;
+          height: 150px;
+          width: 200px;
+
+          > img {
+            margin: 0 auto;
+            width: 100px;
+          }
+        }
+      }
+    }
+
+    .pd-about {
+      .page-title {
+        font-size: 60px;
+        font-weight: bold;
+        letter-spacing: 4px;
+        padding: 40px;
+        text-transform: uppercase;
+      }
+
+      .content-wrapper {
+        padding: 0 100px;
+
+        h1 {
+          color: $pd-text-light;
+          font-weight: bold;
+          padding-top: 60px;
+        }
+
+        .team-wrapper {
+          position: relative;
+          margin-top: 100px;
+
+          .team-photo {
+            border-radius: 4px;
+            background-color: #dde7ee;
+            display: inline-block;
+            margin: 20px;
+            overflow: hidden;
+            position: relative;
+            height: 200px;
+            width: 162px;
+
+            img {
+              width: 100%;
+            }
+
+            .display-name {
+              background: rgba(0, 0, 0, 0.5);
+              bottom: 0;
+              color: $pd-text-light;
+              display: none;
+              position: absolute;
+              right: 0;
+              text-align: center;
+              padding: 10px;
+              width: 100%;
+            }
+
+            &:hover {
+              .display-name {
+                display: block;
+              }
+            }
+          }
+
+          .team-introduction {
+            display: inline-block;
+            position: relative;
+            margin: 20px;
+            width: 162px;
+            height: 200px;
+            border-radius: 4px;
+
+            &-title,
+            &-subtitle {
+              position: absolute;
+              text-align: right;
+              width: 100%;
+            }
+
+            &-title {
+              top: 20px;
+              font-size: 30px;
+              line-height: 40px;
+              text-transform: uppercase;
+              font-weight: bold;
+              letter-spacing: 4px;
+            }
+
+            &-subtitle {
+              bottom: 0;
+              color: $pd-text-light;
+            }
+          }
+        }
+      }
+
+      .communication {
+        position: relative;
+        top: -40px;
+        width: 100%;
+      }
+
+      &-footer {
+        background: linear-gradient($pd-background, $pd-background-dark);
+        margin-top: 100px;
+        padding: 40px 0;
+        text-align: center;
+
+        .title {
+          font-size: 40px;
+          font-weight: bold;
+        }
+
+        .subtitle {
+          color: $pd-text-light;
+        }
+
+        .ant-btn {
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+
+  &-footer {
+    background-color: $pd-color-dark-blue;
+    color: $pd-text-light;
+    margin: 0 auto;
+    padding: 20px 0 40px 0;
+    text-align: center;
+  }
+}
