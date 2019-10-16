@@ -1,14 +1,13 @@
-@import "scss/variables/color.scss";
-@import "scss/variables/font.scss";
+@import 'scss/variables/color.scss';
+@import 'scss/variables/font.scss';
 
 .pd-homepage {
   background: $pd-background-dark;
-  font-family: "brandon", sans-serif;
+  font-family: 'brandon', sans-serif;
   font-size: 16px;
 
   &-main {
     color: $pd-text-dark;
-    display: flex;
 
     .logo {
       img {
@@ -62,8 +61,8 @@
 
       .header {
         align-items: center;
-        display: flex;
         justify-content: space-between;
+        text-align: center;
 
         .logo {
           width: 36px;
@@ -106,7 +105,7 @@
           color: inherit;
 
           &::after {
-            content: "•";
+            content: '•';
             color: $pd-text-dark;
             font-size: 32px;
             position: absolute;
@@ -287,37 +286,6 @@
 
           img {
             width: 100%;
-          }
-        }
-      }
-    }
-
-    .pd-traction {
-      .header {
-        font-weight: bold;
-        font-size: 20px;
-        text-transform: uppercase;
-        margin-bottom: 40px;
-      }
-
-      &-wrapper {
-        display: flex;
-        flex-wrap: wrap;
-
-        &-company {
-          background: white;
-          border-radius: 7px;
-          box-shadow: 1px 2px 4px $pd-color-gray;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          margin: 20px;
-          height: 150px;
-          width: 200px;
-
-          > img {
-            margin: 0 auto;
-            width: 100px;
           }
         }
       }

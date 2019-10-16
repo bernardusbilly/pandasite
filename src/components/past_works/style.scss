@@ -1,0 +1,28 @@
+@import 'scss/variables/color.scss';
+
+.pd-traction {
+  &__v2 {
+    .header {
+      font-weight: bold;
+      font-size: 20px;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+    }
+
+    .pd-traction {
+      &-company {
+        .image-container {
+          height: 200px;
+          width: 100%;
+
+          img {
+            height: 100%;
+            object-fit: contain;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

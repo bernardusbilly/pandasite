@@ -1,39 +1,43 @@
-import React, { useState } from "react";
-import { Button, Col, Icon, Row, Tabs } from "antd";
-import GoogleMapReact from "google-map-react";
+import React, { useState } from 'react';
+import { Button, Col, Icon, Row, Tabs } from 'antd';
 
-import "./style_v2.scss";
+import Container from 'components/containers/v2';
+import PastWorks from 'components/past_works/v2';
+
+import GoogleMapReact from 'google-map-react';
+
+import './style_v2.scss';
 
 function Home() {
   const [products] = useState([
     {
-      title: "UI/UX Standards",
+      title: 'UI/UX Standards',
       description:
-        "88% of customers are less likely to return to a site after a bad experience. Design and experience are foundation to digital success.",
-      image: `${process.env.PUBLIC_URL}/img/artworks/artwork_design_tools.png`
+        '88% of customers are less likely to return to a site after a bad experience. Design and experience are foundation to digital success.',
+      image: `${process.env.PUBLIC_URL}/img/artworks/artwork_design_tools.png`,
     },
     {
-      title: "Web Design",
+      title: 'Web Design',
       description:
-        "There are 4.4 billion people who are using the internet. Make sure your business is there so you are not leaving any money on the table.",
-      image: `${process.env.PUBLIC_URL}/img/artworks/artwork_wall_post.png`
+        'There are 4.4 billion people who are using the internet. Make sure your business is there so you are not leaving any money on the table.',
+      image: `${process.env.PUBLIC_URL}/img/artworks/artwork_wall_post.png`,
     },
     {
-      title: "Mobile iOS & Android",
+      title: 'Mobile iOS & Android',
       description:
-        "In Indonesia, mobile penetration is 91% of the total internet users. Meaning your business could utilize this growth for sure.",
-      image: `${process.env.PUBLIC_URL}/img/artworks/artwork_mobile_life.png`
+        'In Indonesia, mobile penetration is 91% of the total internet users. Meaning your business could utilize this growth for sure.',
+      image: `${process.env.PUBLIC_URL}/img/artworks/artwork_mobile_life.png`,
     },
     {
-      title: "Big Data",
+      title: 'Big Data',
       description:
-        "The gold of the 21st century. Excellent data management and analytics will bring your business to the next level.",
-      image: `${process.env.PUBLIC_URL}/img/artworks/artwork_data.png`
-    }
+        'The gold of the 21st century. Excellent data management and analytics will bring your business to the next level.',
+      image: `${process.env.PUBLIC_URL}/img/artworks/artwork_data.png`,
+    },
   ]);
 
   return (
-    <div className="pd-homepage">
+    <Container className="pd-homepage">
       <div className="pd-homepage-main">
         {/* <div className="pd-sidebar">
           <div className="pd-sidebar-sticky">
@@ -121,87 +125,38 @@ function Home() {
           </Tabs>
 
           <Row id="products" className="pd-products">
-            {products.map(product => {
-              return (
-                <div className="pd-products-item">
-                  <img
-                    src={product.image}
-                    alt={product.title || "Artwork Image"}
-                  />
-                  <div className="pd-products-item-title">{product.title}</div>
-                  <div className="pd-products-item-description">
-                    {product.description}
-                  </div>
+            {products.map((product) => (
+              <Col xs={24} lg={6} className="pd-products-item">
+                <img
+                  src={product.image}
+                  alt={product.title || 'Artwork Image'}
+                />
+                <div className="pd-products-item-title">{product.title}</div>
+                <div className="pd-products-item-description">
+                  {product.description}
                 </div>
-              );
-            })}
+              </Col>
+            ))}
           </Row>
 
-          <Row id="traction" className="pd-traction">
-            <div className="header">Past Works</div>
-            <div className="pd-traction-wrapper">
-              <div className="pd-traction-wrapper-company">
-                <img
-                  src={`${process.env.PUBLIC_URL}/img/traction/ubiklan.png`}
-                  alt="Ubiklan"
-                />
+          <PastWorks />
+
+          <Row id="lets-make-something-great">
+            <Col xs={18} lg={18}>
+              <div className="title">Let's make something great together</div>
+              <div className="subtitle">
+                Get in touch with us and send some basic info for a quick quote
               </div>
-              <div className="pd-traction-wrapper-company">
-                <img
-                  src={`${process.env.PUBLIC_URL}/img/traction/belipart.png`}
-                  alt="Belipart"
-                />
-              </div>
-              <div className="pd-traction-wrapper-company">
-                <img
-                  src={`${process.env.PUBLIC_URL}/img/traction/satu-data-indonesia.png`}
-                  alt="Satu Data Indonesia"
-                />
-              </div>
-              <div className="pd-traction-wrapper-company">
-                <img
-                  src={`${process.env.PUBLIC_URL}/img/traction/kantor-staf-presiden.png`}
-                  alt="Kantor Staf Presiden"
-                />
-              </div>
-              <div className="pd-traction-wrapper-company">
-                <img
-                  src={`${process.env.PUBLIC_URL}/img/traction/happy5.png`}
-                  alt="Happy5"
-                />
-              </div>
-              <div className="pd-traction-wrapper-company">
-                <img
-                  src={`${process.env.PUBLIC_URL}/img/traction/societo-generale.png`}
-                  alt="Societo Generale"
-                />
-              </div>
-              <div className="pd-traction-wrapper-company">
-                <img
-                  src={`${process.env.PUBLIC_URL}/img/traction/kubox.png`}
-                  alt="Kubox"
-                />
-              </div>
-              <div className="pd-traction-wrapper-company">
-                <img
-                  src={`${process.env.PUBLIC_URL}/img/traction/trader-wave.png`}
-                  alt="Trader Wave"
-                />
-              </div>
-              <div className="pd-traction-wrapper-company">
-                <img
-                  src={`${process.env.PUBLIC_URL}/img/traction/little-juice.png`}
-                  alt="Little Juice"
-                />
-              </div>
-              <div className="pd-traction-wrapper-company">
-                <img
-                  src={`${process.env.PUBLIC_URL}/img/traction/ban-ban.png`}
-                  alt="Ban-Ban"
-                />
-              </div>
-            </div>
+            </Col>
+            <Col xs={4} lg={4}>
+              <img
+                src={`${process.env.PUBLIC_URL}/img/artworks/artwork_conversation.png`}
+                alt="conversation"
+              />
+            </Col>
           </Row>
+
+          <Row id="about" className="pd-about"></Row>
 
           <div id="about" className="pd-about">
             <div className="page-title">About Us</div>
@@ -274,28 +229,15 @@ function Home() {
                 </div>
               </div>
             </div>
-            <img
-              className="communication"
-              src={`${process.env.PUBLIC_URL}/img/Communication.png`}
-              alt="Communication"
-            />
-            <div className="pd-about-footer">
-              <div className="title">Let's make something great together</div>
-              <div className="subtitle">
-                Get in touch with us and send some basic info for a quick quote
-              </div>
-              <Button href="#contact">Start A Project</Button>
-            </div>
           </div>
 
           <div id="contact" className="pd-contact">
             <form
               action="https://formspree.io/contact@pandatech.io"
-              method="POST"
-            >
+              method="POST">
               <h1>Contact Us!</h1>
               <p>
-                {" "}
+                {' '}
                 Sending an email is free, redoing a tech work is not. Take the
                 minute to write to us, and let our award winning team reaches
                 out to you.
@@ -314,7 +256,7 @@ function Home() {
               <textarea id="message" name="message" />
               <Button htmlType="submit">Submit</Button>
             </form>
-            <div className="sidebar">
+            {/* <div className="sidebar">
               <div className="contact-whatsapp">
                 <img
                   src={`${process.env.PUBLIC_URL}/img/WhatsApp_Logo_1.png`}
@@ -333,14 +275,37 @@ function Home() {
                   alt="Map"
                 />
               </a>
-            </div>
+            </div> */}
           </div>
+
+          <Row id="social-media-address">
+            <Col xs={12} lg={12}>
+              <div>Social Media</div>
+            </Col>
+            <Col xs={12} lg={12}>
+              <div>Address</div>
+            </Col>
+          </Row>
+
+          <Row id="map">
+            <div>
+              <a
+                className="map-wrapper"
+                href="https://www.google.com/maps/place/NEO+SOHO+Podomoro+City+Central+Park/@-6.1748171,106.7894695,18.04z/data=!4m12!1m6!3m5!1s0x0:0xcb9754290990043d!2sRoyal+Mediterania+Garden+Residences,+Tower+Lavender!8m2!3d-6.1764236!4d106.7892746!3m4!1s0x2e69f65ee1c07a31:0x2c4c67f4d94e8e65!8m2!3d-6.1748323!4d106.7899324?hl=en-US"
+                target="_blank">
+                <img
+                  src={`${process.env.PUBLIC_URL}/img/HeadquarterMap.png`}
+                  alt="Map"
+                />
+              </a>
+            </div>
+          </Row>
         </div>
       </div>
       <div className="pd-homepage-footer">
         © 2019 Pandatech. All Rights Reserved.
       </div>
-    </div>
+    </Container>
   );
 }
 
