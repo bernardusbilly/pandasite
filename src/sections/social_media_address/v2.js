@@ -14,8 +14,9 @@ export default function SocialMediaAddress() {
           <Col lg={12}>
             <a
               className="social-media"
-              href="https://www.google.com/maps/place/NEO+SOHO+Podomoro+City+Central+Park/@-6.1748171,106.7894695,18.04z/data=!4m12!1m6!3m5!1s0x0:0xcb9754290990043d!2sRoyal+Mediterania+Garden+Residences,+Tower+Lavender!8m2!3d-6.1764236!4d106.7892746!3m4!1s0x2e69f65ee1c07a31:0x2c4c67f4d94e8e65!8m2!3d-6.1748323!4d106.7899324?hl=en-US"
-              target="_blank">
+              href="https://www.instagram.com/pandatech.io/"
+              target="_blank"
+              rel="noopener noreferrer">
               <img
                 src={`${process.env.PUBLIC_URL}/img/social_media/instagram.png`}
                 alt="instagram"
@@ -26,8 +27,9 @@ export default function SocialMediaAddress() {
           <Col lg={12}>
             <a
               className="social-media"
-              href="https://www.google.com/maps/place/NEO+SOHO+Podomoro+City+Central+Park/@-6.1748171,106.7894695,18.04z/data=!4m12!1m6!3m5!1s0x0:0xcb9754290990043d!2sRoyal+Mediterania+Garden+Residences,+Tower+Lavender!8m2!3d-6.1764236!4d106.7892746!3m4!1s0x2e69f65ee1c07a31:0x2c4c67f4d94e8e65!8m2!3d-6.1748323!4d106.7899324?hl=en-US"
-              target="_blank">
+              href="https://www.facebook.com/pandatech.io"
+              target="_blank"
+              rel="noopener noreferrer">
               <img
                 src={`${process.env.PUBLIC_URL}/img/social_media/facebook.png`}
                 alt="facebook"
@@ -56,7 +58,8 @@ export default function SocialMediaAddress() {
           <a
             className="map-wrapper"
             href="https://www.google.com/maps/place/NEO+SOHO+Podomoro+City+Central+Park/@-6.1748171,106.7894695,18.04z/data=!4m12!1m6!3m5!1s0x0:0xcb9754290990043d!2sRoyal+Mediterania+Garden+Residences,+Tower+Lavender!8m2!3d-6.1764236!4d106.7892746!3m4!1s0x2e69f65ee1c07a31:0x2c4c67f4d94e8e65!8m2!3d-6.1748323!4d106.7899324?hl=en-US"
-            target="_blank">
+            target="_blank"
+            rel="noopener noreferrer">
             <img
               src={`${process.env.PUBLIC_URL}/img/map/snazzy-image.png`}
               alt="Map"
