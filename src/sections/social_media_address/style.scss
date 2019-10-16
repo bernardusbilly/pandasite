@@ -1,0 +1,32 @@
+.pd-social-media-address__v2 {
+  .title {
+    font-size: 37px;
+    color: #333333;
+    letter-spacing: 1.68px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .address {
+    font-size: 23px;
+    color: #aaaaaa;
+    letter-spacing: 0.5px;
+    text-align: center;
+  }
+
+  .social-media {
+    align-items: center;
+    display: flex;
+
+    .text {
+      font-size: 23px;
+      color: #aaaaaa;
+      letter-spacing: 0.5px;
+      margin-left: 30px;
+    }
+  }
+
+  .pd-map {
+    margin-top: 70px;
+  }
+}
