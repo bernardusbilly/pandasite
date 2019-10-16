@@ -1,10 +1,11 @@
 import React from 'react';
-import { Button, Col, Row, Tabs } from 'antd';
+import { Tabs } from 'antd';
 
 import Container from 'components/containers/v2';
 
 import AboutUs from 'sections/about_us/v2';
 import Contact from 'sections/contact/v2';
+import Header from 'components/headers/v2';
 import Footer from 'components/footers/v2';
 import MeetTheTeam from 'sections/meet_the_team/v2';
 import OurServices from 'sections/our_services/v2';
@@ -18,63 +19,9 @@ function Home() {
   return (
     <div className="pd-homepage">
       <Container>
+        <Header />
         <div className="pd-homepage-main">
-          {/* <div className="pd-sidebar">
-          <div className="pd-sidebar-sticky">
-            <a href="#home" className="home-link">
-              <img
-                src={`${process.env.PUBLIC_URL}/img/Panda_Logo.png`}
-                alt="panda logo"
-              />
-            </a>
-            <a
-              href="https://www.instagram.com/pandatech.io/"
-              className="socmed"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Icon type="instagram" style={{ fontSize: "40px" }} />
-            </a>
-            <a
-              href="https://www.facebook.com/pandatech.io"
-              className="socmed"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Icon type="facebook" style={{ fontSize: "40px" }} />
-            </a>
-            <div className="rotated-name">
-              <a href="#home">Pandatech</a>
-            </div>
-          </div>
-        </div> */}
           <div id="home" className="pd-content">
-            <Row>
-              <Col xs={2} lg={2}>
-                <div className="header">
-                  <div className="logo">
-                    <a href="#home" className="home-link">
-                      <img
-                        src={`${process.env.PUBLIC_URL}/img/Panda_Logo.png`}
-                        alt="panda logo"
-                      />
-                    </a>
-                  </div>
-                  <div>
-                    <span>PandaTech</span>
-                  </div>
-                </div>
-              </Col>
-              <Col xs={22} lg={22}>
-                <header>
-                  <a href="#about">About</a>
-                  <a href="#products">Services</a>
-                  <a href="#contact">Contact</a>
-                  <Button type="link" icon="menu" />
-                </header>
-              </Col>
-            </Row>
-
             <Tabs tabPosition="right">
               <Tabs.TabPane tab="•" key="1" className="tab-1">
                 <div>We</div>

@@ -1,0 +1,45 @@
+.pd-header {
+  &__v2 {
+    margin: 50px 0;
+    align-items: center;
+    justify-content: space-between;
+
+    .header__left {
+      align-items: center;
+      display: flex;
+
+      .logo {
+        display: flex;
+        justify-content: space-evenly;
+        width: 36px;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .company {
+        margin-left: 30px;
+        font-size: 23px;
+        color: #333333;
+        letter-spacing: 0.5px;
+        text-align: left;
+      }
+    }
+
+    .header__right {
+      text-align: right;
+      a {
+        font-size: 23px;
+        color: #333333;
+        letter-spacing: 0.5px;
+        text-align: center;
+        text-transform: uppercase;
+
+        &:not(:first-of-type) {
+          margin-left: 50px;
+        }
+      }
+    }
+  }
+}
