@@ -1,0 +1,44 @@
+.pd-headline {
+  &__v2 {
+    .item {
+      .primary {
+        color: #333333;
+        font-size: 60px;
+        text-transform: uppercase;
+      }
+
+      .secondary {
+        color: #d7dbdd;
+        font-size: 60px;
+        margin: -20px 0;
+        text-transform: uppercase;
+      }
+
+      .description {
+        font-size: 23px;
+        color: #aaaaaa;
+        letter-spacing: 0.82px;
+      }
+    }
+  }
+}
+
+.ant-carousel {
+  .slick-slider {
+    margin-bottom: 50px !important;
+  }
+
+  .slick-dots {
+    bottom: -25px;
+    display: flex;
+
+    .slick-active button {
+      background: #333333 !important;
+      color: #333333 !important;
+    }
+    li button {
+      background: #979797 !important;
+      color: #979797 !important;
+    }
+  }
+}
