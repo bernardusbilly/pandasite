@@ -1,9 +1,12 @@
 @import 'scss/variables/color.scss';
 @import 'scss/variables/font.scss';
 
+section {
+  margin-bottom: 150px;
+}
+
 .pd-homepage {
-  background: $pd-background-dark;
-  font-family: 'brandon', sans-serif;
+  font-family: 'Helvetica', 'brandon', sans-serif;
   font-size: 16px;
 
   &-main {
@@ -179,26 +182,6 @@
 
         div:nth-child(4) {
           color: $pd-text-light;
-        }
-      }
-    }
-
-    .pd-products {
-      background: white;
-      display: flex;
-
-      &-item {
-        padding: 60px;
-
-        &-title {
-          font-weight: bold;
-          font-size: 20px;
-          text-transform: uppercase;
-          padding-bottom: 20px;
-        }
-
-        &-description {
-          color: lightgray;
         }
       }
     }
