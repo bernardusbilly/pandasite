@@ -1,0 +1,55 @@
+.team {
+  .page-title {
+    font-size: 37px;
+    color: #333333;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+
+  .page-subtitle {
+    font-size: 23px;
+    color: #aaaaaa;
+    letter-spacing: 0.5px;
+    margin-bottom: 55px;
+    text-align: center;
+  }
+
+  .team-image-container {
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(51, 51, 51, 0.25);
+    color: #fff;
+    position: relative;
+
+    & > .display-name {
+      position: absolute;
+      bottom: 0px;
+      left: 30px;
+      font-size: 37px;
+      letter-spacing: 0.5px;
+      margin-bottom: 30px;
+    }
+
+    &--left {
+      width: 600px;
+      height: 600px;
+    }
+
+    &--right {
+      width: 290px;
+      height: 290px;
+
+      &.bottom {
+        margin-top: 20px;
+      }
+    }
+
+    img {
+      border-radius: 10px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
