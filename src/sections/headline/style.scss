@@ -29,8 +29,8 @@
   }
 
   .slick-dots {
-    bottom: -25px;
-    display: flex;
+    bottom: -25px !important;
+    display: flex !important;
 
     .slick-active button {
       background: #333333 !important;
