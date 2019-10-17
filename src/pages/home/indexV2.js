@@ -1,5 +1,6 @@
 import React from 'react';
 
+import BottomPath from 'components/paths/bottom';
 import Container from 'components/containers/v2';
 import WhatsappBtn from 'components/whatsapp_btn/v2';
 
@@ -34,6 +35,7 @@ function Home() {
           </div>
         </div>
       </Container>
+      <BottomPath />
       <WhatsappBtn />
       <Footer />
     </div>

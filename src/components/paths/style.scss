@@ -1,0 +1,18 @@
+.pd-paths {
+  position: relative;
+
+  .path {
+    bottom: 0;
+    position: absolute;
+
+    &.first {
+      z-index: -1;
+    }
+    &.second {
+      z-index: 0;
+    }
+    &.third {
+      z-index: 0;
+    }
+  }
+}
