@@ -5,8 +5,8 @@ import './style.scss';
 
 export default function Contact() {
   return (
-    <section>
-      <div id="contact" className="pd-contact__v2">
+    <section id="contact" className="pd-contact__v2">
+      <div className="background">
         <form action="https://formspree.io/contact@pandatech.io" method="POST">
           <Row>
             <Col xs={24} lg={24}>
