@@ -1,0 +1,59 @@
+@import 'scss/variables/index';
+
+@media only screen and (min-width: $phone) {
+  .pd-products {
+    &__v2 {
+      .header {
+        font-size: 17px;
+        margin: 20px 0;
+      }
+
+      .img-container {
+        margin: 20px 0;
+      }
+
+      &-item {
+        &__text {
+          margin-bottom: 20px;
+
+          .description {
+            font-size: 15px;
+            letter-spacing: 0.39px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $tablet) {
+  .pd-products {
+    &__v2 {
+      background: url('/img/backgrounds/bg-our-service_v2.png');
+      background-repeat: no-repeat;
+      background-size: auto;
+
+      .header {
+        font-size: 37px;
+        margin: 70px 0;
+      }
+
+      &-item {
+        background: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 0 20px 0 rgba(51, 51, 51, 0.1);
+        height: 454px;
+        padding: 30px;
+
+        &__text {
+          height: 179px;
+
+          .description {
+            font-size: 18px;
+            letter-spacing: 0.5px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,34 +1,41 @@
 .pd-products {
   &__v2 {
-    background: url('/img/backgrounds/bg-our-service_v2.png');
     margin: 0px -70px;
-    background-repeat: no-repeat;
-    background-size: auto;
     padding: 0 70px;
 
     .header {
-      font-size: 37px;
       color: #333333;
       letter-spacing: 0.5px;
       font-weight: bold;
-      margin: 70px 0;
       text-align: center;
       text-transform: uppercase;
     }
 
+    .img-container {
+      text-align: center;
+    }
+
     &-item {
-      background: #ffffff;
-      border-radius: 10px;
-      box-shadow: 0 0 20px 0 rgba(51, 51, 51, 0.1);
       display: flex;
       flex-direction: column;
-      height: 454px;
       justify-content: space-between;
-      padding: 30px;
+
+      .dropdown {
+        border-bottom: solid 1px #eeeeee;
+        cursor: pointer;
+        display: flex;
+        margin-bottom: 20px;
+        justify-content: space-between;
+        padding: 8px 16px;
+      }
+
+      &-mobile {
+        color: #333333;
+        font-size: 14px;
+        text-align: left;
+      }
 
       &__text {
-        height: 179px;
-
         .title {
           font-size: 23px;
           color: #333333;
@@ -38,7 +45,6 @@
         }
 
         .description {
-          font-size: 18px;
           color: #aaaaaa;
           letter-spacing: 0.5px;
           text-align: center;
@@ -47,3 +53,5 @@
     }
   }
 }
+
+@import './media-query';
