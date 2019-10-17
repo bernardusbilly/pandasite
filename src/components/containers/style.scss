@@ -1,7 +1,7 @@
 .container {
   position: relative;
-  &--v2 {
-    margin: 0 auto;
-    width: 1300px !important;
-  }
+  margin-right: auto;
+  margin-left: auto;
 }
+
+@import './media-query';

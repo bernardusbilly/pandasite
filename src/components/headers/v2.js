@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <header className="pd-header pd-header__v2">
       <Row>
-        <Col xs={2} lg={5}>
+        <Col xs={20} lg={5}>
           <a href="#home">
             <div className="header__left">
               <div className="logo">
@@ -21,7 +21,7 @@ export default function Header() {
           </a>
         </Col>
 
-        <Col xs={22} lg={19}>
+        <Col xs={0} lg={19}>
           <nav className="header__right">
             <a href="#about">About</a>
             <a href="#products">Services</a>
