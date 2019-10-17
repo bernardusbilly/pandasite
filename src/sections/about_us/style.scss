@@ -2,6 +2,17 @@
 @import 'scss/variables/font.scss';
 
 .pd-about {
+  .background {
+    background: url('/img/backgrounds/bg-about_v2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0px -70px;
+
+    .content-wrapper {
+      padding: 50px 70px;
+    }
+  }
+
   .page-title {
     font-size: 37px;
     color: #333333;
