@@ -1,4 +1,10 @@
 .pd-start-project {
+  .background {
+    background: #f9fafb;
+    margin: 0 -70px;
+    padding: 70px;
+  }
+
   .text {
     margin-bottom: 70px;
 
@@ -6,6 +12,7 @@
       font-size: 37px;
       color: #333333;
       letter-spacing: 0.5px;
+      margin-bottom: 30px;
     }
 
     .subtitle {

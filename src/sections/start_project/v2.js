@@ -6,7 +6,7 @@ import './style.scss';
 export default function StartProject() {
   return (
     <section id="pd-start-project" className="pd-start-project">
-      <Row>
+      <Row className="background">
         <Col xs={18} lg={12}>
           <div className="text">
             <div className="title">Let's make something great together</div>
@@ -19,7 +19,7 @@ export default function StartProject() {
             <button>Start a project</button>
           </div>
         </Col>
-        <Col xs={4} lg={{ offset: 2, span: 8 }}>
+        <Col xs={4} lg={{ offset: 3, span: 9 }}>
           <div className="image-container">
             <img
               src={`${process.env.PUBLIC_URL}/img/artworks/artwork_conversation.png`}

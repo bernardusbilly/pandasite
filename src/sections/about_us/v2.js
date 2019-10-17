@@ -11,7 +11,7 @@ export default function AboutUs() {
           About Us
         </Col>
 
-        <div className="content-wrapper">
+        <div className="about-description">
           <p>
             We are a team of collaborators, thinkers, designer and creatives who
             share the same passion in product development and technologies. With
@@ -31,10 +31,10 @@ export default function AboutUs() {
         <Col xs={24} lg={24} className="page-subtitle">
           Our Promise
         </Col>
-        <span>
+        <div className="about-description">
           We only deliver high quality work. Your satisfaction is at the core of
           our work.
-        </span>
+        </div>
       </Row>
     </section>
   );

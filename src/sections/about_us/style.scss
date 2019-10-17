@@ -11,12 +11,19 @@
     margin-bottom: 30px;
   }
 
-  .page-subtitle {
-    font-size: 37px;
-    color: #777777;
+  .about-description {
+    font-size: 23px;
+    color: #aaaaaa;
     letter-spacing: 0.5px;
     text-align: center;
-    margin-top: 70px;
+  }
+
+  .page-subtitle {
+    color: #777777;
+    font-size: 37px;
+    letter-spacing: 0.5px;
+    margin: 70px 0 30px;
+    text-align: center;
   }
 
   .communication {
