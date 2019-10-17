@@ -1,9 +1,9 @@
 .pd-headline {
   &__v2 {
     .item {
-      text-transform: uppercase;
-
       & > .title {
+        text-transform: uppercase;
+
         .primary {
           color: #333333;
         }
