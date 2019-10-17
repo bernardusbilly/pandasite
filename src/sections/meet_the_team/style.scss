@@ -1,4 +1,13 @@
 .team {
+  .background {
+    background: url('/img/backgrounds/bg-team_v2.png');
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0px -70px;
+    padding: 0 70px;
+  }
+
   .page-title {
     font-size: 37px;
     color: #333333;
