@@ -1,9 +1,7 @@
 .pd-whatsapp-btn {
   &__v2 {
-    bottom: 70px;
     cursor: pointer;
     position: fixed;
-    right: 70px;
 
     .pd-whatsapp-container {
       align-items: center;
@@ -15,8 +13,6 @@
       font-size: 18px;
       justify-content: space-between;
       letter-spacing: 0.5px;
-      padding: 17px 30px;
-      width: 208px;
 
       .logo {
         width: 36px;
@@ -33,3 +29,5 @@
     }
   }
 }
+
+@import './media-query';
