@@ -15,9 +15,11 @@ export default function StartProject() {
             </div>
           </div>
 
-          <div className="button">
-            <button>Start a project</button>
-          </div>
+          <a href="#contact">
+            <div className="button">
+              <button>Start a project</button>
+            </div>
+          </a>
         </Col>
         <Col xs={4} lg={{ offset: 3, span: 9 }}>
           <div className="image-container">

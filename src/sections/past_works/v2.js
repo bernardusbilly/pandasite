@@ -11,7 +11,7 @@ export default function PastWorks() {
           Past Works
         </Col>
       </Row>
-      <Row gutter={16}>
+      <Row gutter={20}>
         <Col xs={8} lg={{ span: 4 }} className="pd-traction-company">
           <div className="image-container">
             <img

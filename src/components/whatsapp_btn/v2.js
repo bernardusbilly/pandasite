@@ -9,7 +9,7 @@ export default function WhatsappBtn() {
       rel="noopener noreferrer"
       target="_blank">
       <div className="pd-whatsapp-btn__v2">
-        <div className="container">
+        <div className="pd-whatsapp-container">
           <div className="logo">
             <img
               src={`${process.env.PUBLIC_URL}/img/social_media/whatsapp.png`}

@@ -1,23 +1,13 @@
-@media only screen and (max-width: 600px) {
+@import 'scss/variables/index';
+
+@media only screen and (min-width: $phone) {
   .container {
-    width: 350px;
+    margin: 0 20px;
   }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: $desktop) {
   .container {
-    width: 600px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .container {
-    width: 1300px;
+    margin: 0 70px;
   }
 }
