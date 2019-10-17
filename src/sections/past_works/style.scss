@@ -4,27 +4,25 @@
   &__v2 {
     .header {
       color: #333333;
-      font-size: 37px;
       font-weight: bold;
       letter-spacing: 0.5px;
-      margin: 70px 0;
       text-align: center;
       text-transform: uppercase;
     }
 
-    .pd-traction {
-      &-company {
-        .image-container {
-          height: 200px;
-          width: 100%;
+    .company {
+      .image-container {
+        height: 200px;
+        width: 100%;
 
-          img {
-            height: 100%;
-            object-fit: contain;
-            width: 100%;
-          }
+        img {
+          height: 100%;
+          object-fit: contain;
+          width: 100%;
         }
       }
     }
   }
 }
+
+@import './media-query';
