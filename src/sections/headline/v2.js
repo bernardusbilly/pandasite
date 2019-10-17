@@ -8,9 +8,9 @@ export default function Headline() {
     <section className="pd-headline__v2">
       <Carousel autoplay>
         <div className="item">
-          <div className="primary">We</div>
-          <div className="secondary">Build</div>
-          <div className="primary">Identity.</div>
+          <div className="primary">Your</div>
+          <div className="secondary">Tech</div>
+          <div className="primary">Professional</div>
           <p className="description">
             PandaTech is a full service Branding, design, and development studio
             based in the heart of Jakarta.

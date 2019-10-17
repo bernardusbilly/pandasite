@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Row } from 'antd';
+import { Col, Icon, Row } from 'antd';
 
 import './style.scss';
 
@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <header className="pd-header pd-header__v2">
       <Row>
-        <Col xs={20} lg={5}>
+        <Col xs={22} lg={5}>
           <a href="#home">
             <div className="header__left">
               <div className="logo">
@@ -27,6 +27,10 @@ export default function Header() {
             <a href="#products">Services</a>
             <a href="#contact">Contact</a>
           </nav>
+        </Col>
+
+        <Col xs={2} lg={0}>
+          <Icon className="icon-menu" type="menu" />
         </Col>
       </Row>
     </header>
