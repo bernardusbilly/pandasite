@@ -1,25 +1,18 @@
 .pd-headline {
   &__v2 {
-    margin: 100px 0 170px !important;
-
     .item {
-      .primary {
-        color: #333333;
-        font-size: 60px;
-        text-transform: uppercase;
-      }
+      text-transform: uppercase;
 
-      .secondary {
-        color: #d7dbdd;
-        font-size: 60px;
-        margin: -20px 0;
-        text-transform: uppercase;
+      & > .title {
+        .primary {
+          color: #333333;
+        }
+        .secondary {
+          color: #d7dbdd;
+        }
       }
-
       .description {
-        font-size: 23px;
         color: #aaaaaa;
-        letter-spacing: 0.82px;
       }
     }
   }
@@ -44,3 +37,5 @@
     }
   }
 }
+
+@import './media-query';

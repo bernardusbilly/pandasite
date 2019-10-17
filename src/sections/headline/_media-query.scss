@@ -1,0 +1,48 @@
+@import 'scss/variables/index';
+
+@media only screen and (min-width: $phone) {
+  .pd-headline {
+    &__v2 {
+      margin-bottom: 70px !important;
+
+      .item {
+        font-size: 23px;
+
+        & > .title {
+          margin-bottom: 5px;
+        }
+
+        .description {
+          font-size: 14px;
+          letter-spacing: 0.5px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $tablet) {
+  .pd-headline {
+    &__v2 {
+      margin: 100px 0 170px !important;
+
+      .item {
+        font-size: 60px;
+
+        & > .title {
+          margin-bottom: 25px;
+
+          .secondary {
+            margin: -20px 0;
+          }
+        }
+
+        .description {
+          font-size: 23px;
+          letter-spacing: 0.82px;
+          margin: -20px 0;
+        }
+      }
+    }
+  }
+}

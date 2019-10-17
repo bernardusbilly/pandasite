@@ -1,4 +1,6 @@
-@media only screen and (max-width: 600px) {
+@import 'scss/variables/index';
+
+@media only screen and (min-width: $phone) {
   .pd-header {
     &__v2 {
       .logo {
@@ -12,21 +14,7 @@
   }
 }
 
-@media only screen and (min-width: 600px) {
-  .pd-header {
-    &__v2 {
-      .logo {
-        width: 30px;
-      }
-      .company {
-        font-size: 16px;
-        margin-left: 15px;
-      }
-    }
-  }
-}
-
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: $tablet) {
   .pd-header {
     &__v2 {
       .logo {
