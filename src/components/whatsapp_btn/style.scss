@@ -1,0 +1,35 @@
+.pd-whatsapp-btn {
+  &__v2 {
+    bottom: 70px;
+    cursor: pointer;
+    position: fixed;
+    right: 70px;
+
+    .container {
+      align-items: center;
+      background: #64b161;
+      border-radius: 30px 30px 0 30px;
+      box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+      color: #ffffff;
+      display: flex;
+      font-size: 18px;
+      justify-content: space-between;
+      letter-spacing: 0.5px;
+      padding: 17px 30px;
+      width: 208px;
+
+      .logo {
+        width: 36px;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .text {
+        font-size: 18px;
+        letter-spacing: 0.5px;
+      }
+    }
+  }
+}

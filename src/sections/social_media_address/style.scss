@@ -24,6 +24,15 @@
       letter-spacing: 0.5px;
       margin-left: 30px;
     }
+
+    .img-container {
+      width: 48px;
+
+      img {
+        opacity: 0.6;
+        width: 100%;
+      }
+    }
   }
 
   .pd-map {

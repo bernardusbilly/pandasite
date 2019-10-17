@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Container from 'components/containers/v2';
+import WhatsappBtn from 'components/whatsapp_btn/v2';
 
 import AboutUs from 'sections/about_us/v2';
 import Contact from 'sections/contact/v2';
@@ -33,6 +34,7 @@ function Home() {
           </div>
         </div>
       </Container>
+      <WhatsappBtn />
       <Footer />
     </div>
   );

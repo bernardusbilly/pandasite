@@ -17,10 +17,12 @@ export default function SocialMediaAddress() {
               href="https://www.instagram.com/pandatech.io/"
               target="_blank"
               rel="noopener noreferrer">
-              <img
-                src={`${process.env.PUBLIC_URL}/img/social_media/instagram.png`}
-                alt="instagram"
-              />
+              <div className="img-container">
+                <img
+                  src={`${process.env.PUBLIC_URL}/img/social_media/instagram.png`}
+                  alt="instagram"
+                />
+              </div>
               <div className="text">pandatech.io</div>
             </a>
           </Col>
@@ -30,10 +32,12 @@ export default function SocialMediaAddress() {
               href="https://www.facebook.com/pandatech.io"
               target="_blank"
               rel="noopener noreferrer">
-              <img
-                src={`${process.env.PUBLIC_URL}/img/social_media/facebook.png`}
-                alt="facebook"
-              />
+              <div className="img-container">
+                <img
+                  src={`${process.env.PUBLIC_URL}/img/social_media/facebook.png`}
+                  alt="facebook"
+                />
+              </div>
               <div className="text">pandatech.io</div>
             </a>
           </Col>
@@ -45,9 +49,11 @@ export default function SocialMediaAddress() {
           </Col>
           <Col lg={24}>
             <div className="address">
-              PT. Bank Index Selindo (Bank Index) - Head Office Plaza Bank
-              Index, Jl. M.H. Thamrin No.kav.57, RT.9/RW.5, Gondangdia, Kec.
-              Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10350
+              Cohive Plaza Bank Index
+              <br />
+              Jl. M.H. Thamrin No.kav.57 Kota Jakarta Pusat
+              <br />
+              DKI Jakarta 10350
             </div>
           </Col>
         </Col>
