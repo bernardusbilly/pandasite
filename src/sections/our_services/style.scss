@@ -1,8 +1,11 @@
 .pd-products {
-  background: white;
-  display: flex;
-
   &__v2 {
+    background: url('/img/backgrounds/our-service.png');
+    margin: 0px -70px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding: 0 70px;
+
     .header {
       font-size: 37px;
       color: #333333;
