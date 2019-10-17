@@ -13,10 +13,10 @@ export default function Headline() {
             <div className="secondary">Tech</div>
             <div className="primary">Professional</div>
           </div>
-          <p className="description">
+          <div className="description">
             PandaTech is a full service Branding, design, and development studio
             based in the heart of Jakarta.
-          </p>
+          </div>
         </div>
         <div className="item">
           <div className="title">
@@ -24,9 +24,9 @@ export default function Headline() {
             <div className="secondary">Magnificant</div>
             <div className="primary">Application</div>
           </div>
-          <p className="description">
+          <div className="description">
             From website, mobile app, to desktop app based on your need.
-          </p>
+          </div>
         </div>
         <div className="item">
           <div className="title">
@@ -34,10 +34,10 @@ export default function Headline() {
             <div className="secondary">Tech</div>
             <div className="primary">Consulting</div>
           </div>
-          <p className="description">
+          <div className="description">
             We also provide the service for consulting your business from the
             tech side.
-          </p>
+          </div>
         </div>
       </Carousel>
     </section>

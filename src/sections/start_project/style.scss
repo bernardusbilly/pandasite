@@ -1,16 +1,14 @@
 .pd-start-project {
   .background {
     background: #f9fafb;
-    margin: 0 -70px;
-    padding: 70px;
   }
 
   .text {
     margin-bottom: 70px;
 
     .title {
-      font-size: 37px;
       color: #333333;
+      font-weight: bold;
       letter-spacing: 0.5px;
       margin-bottom: 30px;
     }
@@ -35,10 +33,10 @@
   }
 
   .image-container {
-    width: 100%;
-
     img {
       width: 100%;
     }
   }
 }
+
+@import './media-query';

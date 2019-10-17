@@ -3,17 +3,17 @@
 @media only screen and (min-width: $phone) {
   .pd-headline {
     &__v2 {
-      margin-bottom: 50px !important;
+      margin-bottom: 70px !important;
 
       .item {
-        font-size: 23px;
+        font-size: 30px;
 
         & > .title {
           margin-bottom: 5px;
         }
 
         .description {
-          font-size: 14px;
+          font-size: 16px;
           letter-spacing: 0.5px;
         }
       }
