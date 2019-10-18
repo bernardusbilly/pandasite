@@ -2,64 +2,59 @@
 @import 'scss/variables/font.scss';
 
 .pd-about {
-  .background {
-    background: url('/img/backgrounds/bg-about_v2.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin: 0px -70px;
+  &__v2 {
+    .background {
+      background: url('/img/backgrounds/bg-about_v2.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin: 0px -70px;
 
-    .content-wrapper {
-      padding: 50px 70px;
+      .content-wrapper {
+        padding: 50px 70px;
+      }
     }
-  }
 
-  .page-title {
-    font-size: 37px;
-    color: #333333;
-    letter-spacing: 0.5px;
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 30px;
-  }
-
-  .about-description {
-    font-size: 23px;
-    color: #aaaaaa;
-    letter-spacing: 0.5px;
-    text-align: center;
-  }
-
-  .page-subtitle {
-    color: #777777;
-    font-size: 37px;
-    letter-spacing: 0.5px;
-    margin: 70px 0 30px;
-    text-align: center;
-  }
-
-  .communication {
-    position: relative;
-    top: -40px;
-    width: 100%;
-  }
-
-  &-footer {
-    background: linear-gradient($pd-background, $pd-background-dark);
-    margin-top: 100px;
-    padding: 40px 0;
-    text-align: center;
-
-    .title {
-      font-size: 40px;
+    .header {
+      color: #333333;
       font-weight: bold;
+      letter-spacing: 0.5px;
+      text-align: center;
+      text-transform: uppercase;
     }
 
-    .subtitle {
-      color: $pd-text-light;
+    .about-description {
+      color: #aaaaaa;
+      letter-spacing: 0.5px;
+      text-align: center;
     }
 
-    .ant-btn {
-      margin-top: 40px;
+    .page-subtitle {
+      color: #777777;
+      font-weight: bold;
+      margin: 70px 0 30px;
+      text-align: center;
+    }
+
+    &-footer {
+      background: linear-gradient($pd-background, $pd-background-dark);
+      margin-top: 100px;
+      padding: 40px 0;
+      text-align: center;
+
+      .title {
+        font-size: 40px;
+        font-weight: bold;
+      }
+
+      .subtitle {
+        color: $pd-text-light;
+      }
+
+      .ant-btn {
+        margin-top: 40px;
+      }
     }
   }
 }
+
+@import './media-query';

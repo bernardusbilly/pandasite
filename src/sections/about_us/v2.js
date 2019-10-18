@@ -5,11 +5,11 @@ import './style.scss';
 
 export default function AboutUs() {
   return (
-    <section id="about" className="pd-about">
+    <section id="about" className="pd-about__v2">
       <div className="background">
         <div className="content-wrapper">
           <Row>
-            <Col xs={24} lg={24} className="page-title">
+            <Col xs={24} lg={24} className="header">
               About Us
             </Col>
 
