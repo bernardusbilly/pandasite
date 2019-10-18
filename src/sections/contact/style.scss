@@ -9,19 +9,17 @@
       padding: 70px;
     }
 
-    .page-title {
-      font-size: 37px;
+    .header {
       color: #333333;
+      font-weight: bold;
       letter-spacing: 0.5px;
       text-align: center;
     }
 
     .page-subtitle {
-      font-size: 23px;
       color: #aaaaaa;
       letter-spacing: 0.5px;
       text-align: center;
-      margin: 30px 0px 70px;
     }
 
     form {
@@ -35,11 +33,7 @@
       }
 
       > div {
-        display: flex;
-
         > div {
-          flex: 1 1 auto;
-
           &:first-child {
             margin-right: 10px;
           }
@@ -72,7 +66,7 @@
 
       textarea {
         height: 200px;
-        margin: 50px 0px;
+        margin-bottom: 50px;
         resize: none;
       }
 
@@ -90,3 +84,5 @@
     }
   }
 }
+
+@import './media-query';

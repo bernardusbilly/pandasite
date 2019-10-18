@@ -10,11 +10,11 @@ export default function Contact() {
         <form action="https://formspree.io/contact@pandatech.io" method="POST">
           <Row>
             <Col xs={24} lg={24}>
-              <div className="page-title">Contact Us!</div>
+              <div className="header">Contact Us!</div>
             </Col>
           </Row>
 
-          <Row>
+          <Row gutter={16}>
             <Col xs={24} lg={24}>
               <div className="page-subtitle">
                 Sending an email is free, redoing a tech work is not. Take the
@@ -22,20 +22,29 @@ export default function Contact() {
                 out to you.
               </div>
             </Col>
-          </Row>
 
-          <div>
-            <div>
+            <Col xs={24} md={12}>
               <input id="name" type="name" name="name" placeholder="Name" />
-            </div>
-            <div>
-              <input id="email" type="email" name="email" placeholder="Email" />
-            </div>
-          </div>
-          <textarea id="message" name="message" placeholder="Message" />
-          <button className="btn-submit" htmlType="submit">
-            Submit
-          </button>
+            </Col>
+            <Col xs={24} md={12}>
+              <input
+                id="email"
+                className="email"
+                type="email"
+                name="email"
+                placeholder="Email"
+              />
+            </Col>
+            <Col xs={24}>
+              <textarea id="message" name="message" placeholder="Message" />
+            </Col>
+
+            <Col xs={24}>
+              <button className="btn-submit" htmlType="submit">
+                Submit
+              </button>
+            </Col>
+          </Row>
         </form>
       </div>
     </section>

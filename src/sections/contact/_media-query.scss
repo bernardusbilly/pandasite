@@ -1,0 +1,49 @@
+@import 'scss/variables/index';
+
+@media only screen and (min-width: $phone) {
+  .pd-contact {
+    &__v2 {
+      .background {
+        padding: 20px 70px;
+      }
+
+      .header {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      .page-subtitle {
+        font-size: 17px;
+        margin-bottom: 20px;
+      }
+
+      .email {
+        margin: 30px 0;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $tablet) {
+  .pd-contact {
+    &__v2 {
+      .background {
+        padding: 70px;
+      }
+
+      .header {
+        font-size: 37px;
+        margin-bottom: 30px;
+      }
+
+      .page-subtitle {
+        font-size: 37px;
+        margin: 30px 0 20px;
+      }
+
+      .email {
+        margin: 0;
+      }
+    }
+  }
+}

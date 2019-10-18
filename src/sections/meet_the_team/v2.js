@@ -72,7 +72,7 @@ export default function MeetTheTeam() {
             </div>
           </Col>
 
-          <Col xs={12}>
+          <Col xs={12} md={0}>
             <div className="wrapper wrapper--left">
               <div className="team-image-container team-image-container--left">
                 <img
@@ -105,7 +105,7 @@ export default function MeetTheTeam() {
             </div>
           </Col>
 
-          <Col xs={12}>
+          <Col xs={12} md={0}>
             <div className="wrapper wrapper--right">
               <div className="team-image-container team-image-container--right">
                 <img
