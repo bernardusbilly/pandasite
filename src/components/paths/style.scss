@@ -9,10 +9,12 @@
       z-index: -1;
     }
     &.second {
-      z-index: 0;
+      z-index: -2;
     }
     &.third {
-      z-index: 0;
+      z-index: -3;
     }
   }
 }
+
+@import './media-query';

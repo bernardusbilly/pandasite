@@ -1,0 +1,59 @@
+@import 'scss/variables/index';
+
+@media only screen and (min-width: $phone) {
+  .pd-social-media-address {
+    &__v2 {
+      .header {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+
+      .address {
+        font-size: 20px;
+      }
+
+      .social-media {
+        .text {
+          font-size: 20px;
+          margin-left: 10px;
+        }
+        .img-container {
+          width: 30px;
+        }
+      }
+
+      .pd-map {
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $tablet) {
+  .pd-social-media-address {
+    &__v2 {
+      .header {
+        font-size: 37px;
+        margin-bottom: 30px;
+      }
+
+      .address {
+        font-size: 23px;
+      }
+
+      .social-media {
+        .text {
+          font-size: 23px;
+          margin-left: 30px;
+        }
+        .img-container {
+          width: 48px;
+        }
+      }
+
+      .pd-map {
+        margin-top: 70px;
+      }
+    }
+  }
+}

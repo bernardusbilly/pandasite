@@ -7,11 +7,11 @@ export default function SocialMediaAddress() {
   return (
     <section id="social-media-address" className="pd-social-media-address__v2">
       <Row>
-        <Col xs={24} lg={12}>
-          <Col lg={24}>
-            <div className="title">Social Media</div>
+        <Col xs={24} md={12}>
+          <Col md={24}>
+            <div className="header">Social Media</div>
           </Col>
-          <Col lg={12}>
+          <Col xs={12} md={12}>
             <a
               className="social-media"
               href="https://www.instagram.com/pandatech.io/"
@@ -26,7 +26,7 @@ export default function SocialMediaAddress() {
               <div className="text">pandatech.io</div>
             </a>
           </Col>
-          <Col lg={12}>
+          <Col xs={12} md={12}>
             <a
               className="social-media"
               href="https://www.facebook.com/pandatech.io"
@@ -43,11 +43,13 @@ export default function SocialMediaAddress() {
           </Col>
         </Col>
 
-        <Col xs={24} lg={12}>
-          <Col lg={24}>
-            <div className="title">Address</div>
+        <Col xs={24} md={12}>
+          <Col md={24}>
+            <div className="header" style={{ marginTop: '35px' }}>
+              Address
+            </div>
           </Col>
-          <Col lg={24}>
+          <Col md={24}>
             <div className="address">
               Cohive Plaza Bank Index
               <br />
