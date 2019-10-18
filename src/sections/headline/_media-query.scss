@@ -3,7 +3,7 @@
 @media only screen and (min-width: $phone) {
   .pd-headline {
     &__v2 {
-      margin-bottom: 70px !important;
+      margin: 120px 0 !important;
 
       .item {
         font-size: 30px;
@@ -24,7 +24,7 @@
 @media only screen and (min-width: $tablet) {
   .pd-headline {
     &__v2 {
-      margin: 100px 0 170px !important;
+      margin: 170px 0 !important;
 
       .item {
         font-size: 60px;

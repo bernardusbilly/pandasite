@@ -3,7 +3,7 @@
 @media only screen and (min-width: $phone) {
   .pd-header {
     &__v2 {
-      margin: 20px 0 50px;
+      padding: 20px;
 
       .logo {
         width: 30px;
@@ -19,7 +19,8 @@
 @media only screen and (min-width: $tablet) {
   .pd-header {
     &__v2 {
-      margin: 50px 0;
+      margin: 0 -70px;
+      padding: 20px 70px;
 
       .logo {
         width: 36px;

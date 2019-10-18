@@ -1,7 +1,12 @@
 .pd-header {
   &__v2 {
-    align-items: center;
-    justify-content: space-between;
+    background: #fff;
+    box-shadow: 0 0px 6px 0 rgba(49, 53, 59, 0.12);
+    margin: 0 -20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 
     .header__left {
       align-items: center;
