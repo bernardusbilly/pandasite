@@ -45,7 +45,7 @@ export default function SocialMediaAddress() {
 
         <Col xs={24} md={12}>
           <Col md={24}>
-            <div className="header address">Address</div>
+            <div className="header header--address">Address</div>
           </Col>
           <Col md={24}>
             <div className="address">

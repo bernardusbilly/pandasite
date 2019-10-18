@@ -7,7 +7,7 @@
         font-size: 24px;
         margin-bottom: 20px;
 
-        &.address {
+        &--address {
           margin-top: 35px;
         }
       }
@@ -39,6 +39,10 @@
       .header {
         font-size: 37px;
         margin-bottom: 30px;
+
+        &--address {
+          margin-top: 0px;
+        }
       }
 
       .address {

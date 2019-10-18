@@ -124,7 +124,7 @@ export default function OurServices() {
         {products &&
           products.map((product, index) => (
             <React.Fragment key={index}>
-              <Col xs={0} md={6}>
+              <Col xs={0} md={0} lg={6}>
                 <div className="pd-products__v2-item">
                   <div className="img-container">
                     <img
@@ -139,7 +139,7 @@ export default function OurServices() {
                 </div>
               </Col>
 
-              <Col xs={24} md={0}>
+              <Col xs={24} md={24} lg={0}>
                 <div className="pd-products__v2-item">
                   <div className="dropdown" onClick={() => toggleShown(index)}>
                     <div className="title">{product.title}</div>
