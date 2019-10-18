@@ -7,12 +7,12 @@ export default function PastWorks() {
   return (
     <section id="traction" className="pd-traction__v2">
       <Row>
-        <Col xs={24} lg={24} className="header">
+        <Col xs={24} md={24} className="header">
           Past Works
         </Col>
       </Row>
       <Row gutter={20}>
-        <Col xs={8} lg={{ span: 4 }} className="company">
+        <Col xs={8} md={{ span: 4 }} className="company">
           <div className="image-container">
             <img
               src={`${process.env.PUBLIC_URL}/img/traction/ubiklan.png`}
@@ -20,7 +20,7 @@ export default function PastWorks() {
             />
           </div>
         </Col>
-        <Col xs={8} lg={{ offset: 1, span: 4 }} className="company">
+        <Col xs={8} md={{ offset: 1, span: 4 }} className="company">
           <div className="image-container">
             <img
               src={`${process.env.PUBLIC_URL}/img/traction/belipart.png`}
@@ -28,7 +28,7 @@ export default function PastWorks() {
             />
           </div>
         </Col>
-        <Col xs={8} lg={{ offset: 1, span: 4 }} className="company">
+        <Col xs={8} md={{ offset: 1, span: 4 }} className="company">
           <div className="image-container">
             <img
               src={`${process.env.PUBLIC_URL}/img/traction/satu-data-indonesia.png`}
@@ -36,7 +36,7 @@ export default function PastWorks() {
             />
           </div>
         </Col>
-        <Col xs={8} lg={{ offset: 1, span: 4 }} className="company">
+        <Col xs={8} md={{ offset: 1, span: 4 }} className="company">
           <div className="image-container">
             <img
               src={`${process.env.PUBLIC_URL}/img/traction/kantor-staf-presiden.png`}
@@ -44,7 +44,7 @@ export default function PastWorks() {
             />
           </div>
         </Col>
-        <Col xs={8} lg={{ offset: 1, span: 4 }} className="company">
+        <Col xs={8} md={{ offset: 1, span: 4 }} className="company">
           <div className="image-container">
             <img
               src={`${process.env.PUBLIC_URL}/img/traction/happy5.png`}
@@ -52,7 +52,7 @@ export default function PastWorks() {
             />
           </div>
         </Col>
-        <Col xs={8} lg={{ span: 4 }} className="company">
+        <Col xs={8} md={{ span: 4 }} className="company">
           <div className="image-container">
             <img
               src={`${process.env.PUBLIC_URL}/img/traction/societo-generale.png`}
@@ -60,7 +60,7 @@ export default function PastWorks() {
             />
           </div>
         </Col>
-        <Col xs={8} lg={{ offset: 1, span: 4 }} className="company">
+        <Col xs={8} md={{ offset: 1, span: 4 }} className="company">
           <div className="image-container">
             <img
               src={`${process.env.PUBLIC_URL}/img/traction/kubox.png`}
@@ -68,7 +68,7 @@ export default function PastWorks() {
             />
           </div>
         </Col>
-        <Col xs={8} lg={{ offset: 1, span: 4 }} className="company">
+        <Col xs={8} md={{ offset: 1, span: 4 }} className="company">
           <div className="image-container">
             <img
               src={`${process.env.PUBLIC_URL}/img/traction/trader-wave.png`}
@@ -76,7 +76,7 @@ export default function PastWorks() {
             />
           </div>
         </Col>
-        <Col xs={8} lg={{ offset: 1, span: 4 }} className="company">
+        <Col xs={8} md={{ offset: 1, span: 4 }} className="company">
           <div className="image-container">
             <img
               src={`${process.env.PUBLIC_URL}/img/traction/little-juice.png`}
@@ -84,7 +84,7 @@ export default function PastWorks() {
             />
           </div>
         </Col>
-        <Col xs={8} lg={{ offset: 1, span: 4 }} className="company">
+        <Col xs={8} md={{ offset: 1, span: 4 }} className="company">
           <div className="image-container">
             <img
               src={`${process.env.PUBLIC_URL}/img/traction/ban-ban.png`}

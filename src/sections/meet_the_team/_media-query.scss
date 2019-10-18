@@ -1,0 +1,47 @@
+@import 'scss/variables/index';
+
+@media only screen and (min-width: $phone) {
+  .team {
+    .page-title {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .page-subtitle {
+      font-size: 17px;
+      margin-bottom: 20px;
+    }
+
+    .team-image-container {
+      height: 160px;
+
+      & > .display-name {
+        font-size: 15px;
+        left: 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $tablet) {
+  .team {
+    .page-title {
+      font-size: 37px;
+      margin-bottom: 30px;
+    }
+
+    .page-subtitle {
+      font-size: 37px;
+      margin-bottom: 55px;
+    }
+
+    .team-image-container {
+      height: 300px;
+
+      & > .display-name {
+        font-size: 30px;
+        left: 20px;
+      }
+    }
+  }
+}
