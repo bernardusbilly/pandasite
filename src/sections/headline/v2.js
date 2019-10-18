@@ -14,7 +14,7 @@ export default function Headline() {
             <div className="primary">Professional</div>
           </div>
           <div className="description">
-            PandaTech is a full service Branding, design, and development studio
+            Pandatech is a full service Branding, design, and development studio
             based in the heart of Jakarta.
           </div>
         </div>

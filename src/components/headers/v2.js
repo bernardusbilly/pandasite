@@ -29,7 +29,7 @@ export default function Header() {
                   alt="panda logo"
                 />
               </div>
-              <div className="company">PandaTech</div>
+              <div className="company">Pandatech</div>
             </div>
           </a>
         </Col>

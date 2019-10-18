@@ -15,9 +15,9 @@ export default function Bottom() {
         <g
           id="Page-1"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
           fill="none"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           opacity="0.745954241">
           <g
             id="Website-View"
@@ -46,9 +46,9 @@ export default function Bottom() {
         <g
           id="Page-1"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
           fill="none"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           opacity="0.745954241">
           <g
             id="Website-View"
@@ -78,9 +78,9 @@ export default function Bottom() {
         <g
           id="Page-1"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
           fill="none"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           opacity="0.745954241">
           <g
             id="Website-View"

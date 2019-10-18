@@ -14,9 +14,9 @@ function arrowUp() {
       <g
         id="Page-1"
         stroke="none"
-        stroke-width="1"
+        strokeWidth="1"
         fill="none"
-        fill-rule="evenodd">
+        fillRule="evenodd">
         <g
           id="Website-Mobile-View-1"
           transform="translate(-272.000000, -405.000000)"
@@ -49,9 +49,9 @@ function arrowDown() {
       <g
         id="Page-1"
         stroke="none"
-        stroke-width="1"
+        strokeWidth="1"
         fill="none"
-        fill-rule="evenodd">
+        fillRule="evenodd">
         <g
           id="Website-Mobile-View-1"
           transform="translate(-272.000000, -636.000000)"
@@ -123,7 +123,7 @@ export default function OurServices() {
       <Row gutter={16}>
         {products &&
           products.map((product, index) => (
-            <>
+            <React.Fragment key={index}>
               <Col xs={0} md={6}>
                 <div className="pd-products__v2-item">
                   <div className="img-container">
@@ -162,7 +162,7 @@ export default function OurServices() {
                   )}
                 </div>
               </Col>
-            </>
+            </React.Fragment>
           ))}
       </Row>
     </section>

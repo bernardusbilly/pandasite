@@ -36,11 +36,16 @@ export default function Contact() {
               />
             </Col>
             <Col xs={24}>
-              <textarea id="message" name="message" placeholder="Message" />
+              <textarea
+                id="message"
+                className="message"
+                name="message"
+                placeholder="Message"
+              />
             </Col>
 
             <Col xs={24}>
-              <button className="btn-submit" htmlType="submit">
+              <button className="btn-submit" htmltype="submit">
                 Submit
               </button>
             </Col>
