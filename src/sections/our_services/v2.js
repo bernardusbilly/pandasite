@@ -140,7 +140,7 @@ export default function OurServices() {
               </Col>
 
               <Col xs={24} md={24} lg={0}>
-                <div className="pd-products__v2-item">
+                <div className="pd-products__v2-item pd-products__v2-item--mobile-tablet">
                   <div className="dropdown" onClick={() => toggleShown(index)}>
                     <div className="title">{product.title}</div>
                     <div className="arrow">

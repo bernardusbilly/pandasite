@@ -13,11 +13,19 @@
       }
 
       &-item {
+        &--mobile-tablet {
+          .dropdown {
+            .title {
+              font-size: 20px !important;
+            }
+          }
+        }
+
         &__text {
           margin-bottom: 20px;
 
           .description {
-            font-size: 15px;
+            font-size: 16px;
             letter-spacing: 0.39px;
           }
         }
