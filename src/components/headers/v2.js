@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Col, Icon, Row } from 'antd';
 
 import MobileMenu from 'components/mobile_menus/v2';
@@ -7,6 +7,8 @@ import './style.scss';
 
 export default function Header() {
   const [mobileMenuVisibility, setMobileMenuVisibility] = useState(false);
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [boxShadowActive, setBoxShadowActive] = useState(false);
 
   function showMenu() {
     setMobileMenuVisibility(true);
@@ -16,8 +18,40 @@ export default function Header() {
     setMobileMenuVisibility(false);
   }
 
+  function listenToScroll() {
+    const winScroll =
+      document.body.scrollTop || document.documentElement.scrollTop;
+
+    const height =
+      document.documentElement.scrollHeight -
+      document.documentElement.clientHeight;
+
+    const scrolled = winScroll / height;
+
+    setScrollPosition(scrolled);
+  }
+
+  useEffect(() => {
+    if (scrollPosition === 0) {
+      setBoxShadowActive(false);
+    } else {
+      setBoxShadowActive(true);
+    }
+  }, [scrollPosition]);
+
+  useEffect(() => {
+    window.addEventListener('scroll', listenToScroll);
+    return () => {
+      window.removeEventListener('scroll');
+    };
+  }, []);
+
   return (
-    <header id="pd-header" className="pd-header pd-header__v2">
+    <header
+      id="pd-header"
+      className={`pd-header pd-header__v2 ${
+        boxShadowActive ? 'box-shadow-active' : ''
+      } `}>
       {mobileMenuVisibility && <MobileMenu handleClose={hideMenu} />}
       <Row>
         <Col xs={22} md={23} lg={16}>
