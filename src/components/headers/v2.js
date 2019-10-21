@@ -32,7 +32,7 @@ export default function Header() {
   }
 
   useEffect(() => {
-    if (scrollPosition === 0) {
+    if (scrollPosition <= 0) {
       setBoxShadowActive(false);
     } else {
       setBoxShadowActive(true);
