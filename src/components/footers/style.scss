@@ -1,8 +1,9 @@
+@import 'scss/variables/index';
+
 .pd-footer {
   &__v2 {
-    background: #333333;
-    color: #ffffff;
-    font-family: Helvetica;
+    background: $pd-black-1;
+    color: $pd-white;
     font-size: 18px;
     letter-spacing: 0.82px;
     padding: 20px 0;

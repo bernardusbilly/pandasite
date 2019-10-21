@@ -1,9 +1,9 @@
-@import 'scss/variables/color.scss';
+@import 'scss/variables/index.scss';
 
 .pd-traction {
   &__v2 {
     .header {
-      color: #333333;
+      color: $pd-black-1;
       font-weight: bold;
       letter-spacing: 0.5px;
       text-align: center;

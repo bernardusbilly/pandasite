@@ -1,6 +1,8 @@
+@import 'scss/variables/index';
+
 .pd-header {
   &__v2 {
-    background: #fff;
+    background: $pd-white;
     margin: 0 -20px;
     position: fixed;
     top: 0;
@@ -22,7 +24,7 @@
       }
 
       .company {
-        color: #333333;
+        color: $pd-black-1;
         letter-spacing: 0.5px;
         text-align: left;
       }
@@ -34,7 +36,7 @@
 
       a {
         font-size: 23px;
-        color: #333333;
+        color: $pd-black-1;
         letter-spacing: 0.5px;
         text-align: center;
         text-transform: uppercase;

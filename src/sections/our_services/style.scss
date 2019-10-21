@@ -1,10 +1,12 @@
+@import 'scss/variables/index.scss';
+
 .pd-products {
   &__v2 {
     margin: 0px -70px;
     padding: 0 70px;
 
     .header {
-      color: #333333;
+      color: $pd-black-1;
       letter-spacing: 0.5px;
       font-weight: bold;
       text-align: center;
@@ -32,14 +34,14 @@
       &__text {
         .title {
           font-size: 23px;
-          color: #333333;
+          color: $pd-black-1;
           letter-spacing: 0.5px;
           margin-bottom: 10px;
           text-align: center;
         }
 
         .description {
-          color: #aaaaaa;
+          color: $pd-grey-1;
           letter-spacing: 0.5px;
           text-align: center;
         }

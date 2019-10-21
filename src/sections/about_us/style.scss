@@ -1,5 +1,4 @@
-@import 'scss/variables/color.scss';
-@import 'scss/variables/font.scss';
+@import 'scss/variables/index.scss';
 
 .pd-about {
   &__v2 {
@@ -15,7 +14,7 @@
     }
 
     .header {
-      color: #333333;
+      color: $pd-black-1;
       font-weight: bold;
       letter-spacing: 0.5px;
       text-align: center;
@@ -23,36 +22,16 @@
     }
 
     .about-description {
-      color: #aaaaaa;
+      color: $pd-grey-1;
       letter-spacing: 0.5px;
       text-align: center;
     }
 
     .page-subtitle {
-      color: #777777;
+      color: $pd-grey-2;
       font-weight: bold;
       margin: 70px 0 30px;
       text-align: center;
-    }
-
-    &-footer {
-      background: linear-gradient($pd-background, $pd-background-dark);
-      margin-top: 100px;
-      padding: 40px 0;
-      text-align: center;
-
-      .title {
-        font-size: 40px;
-        font-weight: bold;
-      }
-
-      .subtitle {
-        color: $pd-text-light;
-      }
-
-      .ant-btn {
-        margin-top: 40px;
-      }
     }
   }
 }

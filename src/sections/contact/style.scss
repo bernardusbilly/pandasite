@@ -1,5 +1,4 @@
-@import 'scss/variables/color.scss';
-@import 'scss/variables/font.scss';
+@import 'scss/variables/index.scss';
 
 .pd-contact {
   &__v2 {
@@ -10,14 +9,14 @@
     }
 
     .header {
-      color: #333333;
+      color: $pd-black-1;
       font-weight: bold;
       letter-spacing: 0.5px;
       text-align: center;
     }
 
     .page-subtitle {
-      color: #aaaaaa;
+      color: $pd-grey-1;
       letter-spacing: 0.5px;
       text-align: center;
     }

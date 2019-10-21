@@ -1,14 +1,16 @@
+@import 'scss/variables/index';
+
 .pd-social-media-address {
   &__v2 {
     .header {
-      color: #333333;
+      color: $pd-black-1;
       font-weight: bold;
       letter-spacing: 1.68px;
       text-align: center;
     }
 
     .address {
-      color: #aaaaaa;
+      color: $pd-grey-1;
       letter-spacing: 0.5px;
       text-align: center;
     }
@@ -18,7 +20,7 @@
       display: flex;
 
       .text {
-        color: #aaaaaa;
+        color: $pd-grey-1;
         letter-spacing: 0.5px;
       }
 
