@@ -12,7 +12,7 @@
 @media only screen and (min-width: $tablet) {
   .pd-footer {
     &__v2 {
-      font-size: 18px;
+      font-size: $pd-font-size-sm;
     }
   }
 }

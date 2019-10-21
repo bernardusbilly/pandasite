@@ -4,7 +4,7 @@
   .pd-products {
     &__v2 {
       .header {
-        font-size: 24px;
+        font-size: $pd-font-size-md;
         margin: 20px 0;
       }
 
@@ -42,7 +42,7 @@
       background-size: auto;
 
       .header {
-        font-size: 37px;
+        font-size: $pd-font-size-lg;
         margin: 70px 0;
       }
 
@@ -58,7 +58,7 @@
           margin-bottom: 0px;
 
           .description {
-            font-size: 18px;
+            font-size: $pd-font-size-sm;
             letter-spacing: 0.5px;
           }
         }

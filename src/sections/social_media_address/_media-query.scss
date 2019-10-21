@@ -4,7 +4,7 @@
   .pd-social-media-address {
     &__v2 {
       .header {
-        font-size: 24px;
+        font-size: $pd-font-size-md;
         margin-bottom: 20px;
 
         &--address {
@@ -37,7 +37,7 @@
   .pd-social-media-address {
     &__v2 {
       .header {
-        font-size: 37px;
+        font-size: $pd-font-size-lg;
         margin-bottom: 30px;
 
         &--address {
@@ -46,12 +46,12 @@
       }
 
       .address {
-        font-size: 23px;
+        font-size: $pd-font-size-md;
       }
 
       .social-media {
         .text {
-          font-size: 23px;
+          font-size: $pd-font-size-md;
           margin-left: 30px;
         }
         .img-container {

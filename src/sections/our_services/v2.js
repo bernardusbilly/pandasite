@@ -24,7 +24,7 @@ function arrowUp() {
           <g id="Our-Service" transform="translate(20.000000, 352.000000)">
             <g id="UI/UX" transform="translate(0.000000, 46.000000)">
               <g
-                id="ic_expand_more_24px"
+                id="ic_expand_more_$pd-font-size-md"
                 transform="translate(258.000000, 11.000000) scale(1, -1) translate(-258.000000, -11.000000) translate(252.000000, 7.000000)">
                 <polygon
                   id="Path"
@@ -59,7 +59,7 @@ function arrowDown() {
           <g id="Our-Service" transform="translate(20.000000, 352.000000)">
             <g id="Web-Design" transform="translate(0.000000, 277.000000)">
               <g
-                id="ic_expand_more_24px"
+                id="ic_expand_more_$pd-font-size-md"
                 transform="translate(252.000000, 7.000000)">
                 <polygon
                   id="Path"

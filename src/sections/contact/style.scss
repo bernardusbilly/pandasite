@@ -50,7 +50,7 @@
         background: transparent;
         border: 1px solid #dddddd;
         border-radius: 5px;
-        font-size: 18px;
+        font-size: $pd-font-size-sm;
         color: #bdbdbd;
         letter-spacing: 0.5px;
         text-align: left;
@@ -74,7 +74,7 @@
         border-color: transparent;
         border-radius: 5px;
         color: #ffffff;
-        font-size: 18px;
+        font-size: $pd-font-size-sm;
         letter-spacing: 0.64px;
         padding: 12px 67px;
         text-align: center;
