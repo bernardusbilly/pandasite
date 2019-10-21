@@ -54,7 +54,7 @@ export default function Header() {
       } `}>
       {mobileMenuVisibility && <MobileMenu handleClose={hideMenu} />}
       <Row>
-        <Col xs={22} md={23} lg={16}>
+        <Col xs={22} md={23} lg={8}>
           <a href="#home">
             <div className="header__left">
               <div className="logo">
@@ -68,7 +68,7 @@ export default function Header() {
           </a>
         </Col>
 
-        <Col xs={0} md={0} lg={8}>
+        <Col xs={0} md={0} lg={16}>
           <nav className="header__right">
             <a href="#products">Services</a>
             <a href="#about">About</a>

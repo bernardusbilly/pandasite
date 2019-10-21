@@ -4,16 +4,6 @@
   .path {
     bottom: 0;
     position: absolute;
-
-    &.first {
-      z-index: -1;
-    }
-    &.second {
-      z-index: -2;
-    }
-    &.third {
-      z-index: -3;
-    }
   }
 }
 

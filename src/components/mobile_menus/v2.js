@@ -19,7 +19,7 @@ export default function MobileMenus(props) {
       <Row>
         <ul className="menu-list">
           <li onClick={handleClose}>
-            <a href="#products">Service</a>
+            <a href="#products">Services</a>
           </li>
           <li onClick={handleClose}>
             <a href="#about">About</a>

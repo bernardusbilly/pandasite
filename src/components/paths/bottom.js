@@ -6,10 +6,10 @@ export default function Bottom() {
   return (
     <section className="pd-paths">
       <svg
-        className="path first"
-        width="399px"
-        height="300px"
-        viewBox="0 0 399 300"
+        className="path third"
+        width="881px"
+        height="600px"
+        viewBox="0 0 881 600"
         version="1.1"
         xmlns="http://www.w3.org/2000/svg">
         <g
@@ -21,15 +21,16 @@ export default function Bottom() {
           opacity="0.745954241">
           <g
             id="Website-View"
-            transform="translate(0.000000, -5747.000000)"
+            transform="translate(0.000000, -5447.000000)"
             fill="#EEEEEE">
             <g
               id="home-section-8-background"
               transform="translate(0.000000, 5262.000000)">
               <g
                 transform="translate(440.500000, 485.000000) scale(-1, 1) translate(-440.500000, -485.000000) translate(0.000000, 185.000000)"
-                id="Path-2-Copy-2">
-                <path d="M481.796875,600 C589.781063,589.651718 589.781063,498.589709 636.405192,486.013106 C683.029321,473.436504 729.959428,486.013106 760.733215,430.401539 C791.507003,374.789971 805.175089,317.537634 881,300 C881,362.21596 881,462.21596 881,600 C658.54764,600 525.479932,600 481.796875,600 Z"></path>
+                id="Path-2-Copy"
+                opacity="0.25">
+                <path d="M0,600 C273.646663,544.341424 204.379832,480.046493 307.064411,425.371761 C409.74899,370.697028 508.420357,464.772297 555.084985,282.598614 C601.749612,100.424931 844.633045,132.85691 881,0 C881,75.5108956 881,275.510896 881,600 C392.564001,600 98.897334,600 0,600 Z"></path>
               </g>
             </g>
           </g>
@@ -69,10 +70,10 @@ export default function Bottom() {
       </svg>
 
       <svg
-        className="path third"
-        width="881px"
-        height="600px"
-        viewBox="0 0 881 600"
+        className="path first"
+        width="399px"
+        height="300px"
+        viewBox="0 0 399 300"
         version="1.1"
         xmlns="http://www.w3.org/2000/svg">
         <g
@@ -84,16 +85,15 @@ export default function Bottom() {
           opacity="0.745954241">
           <g
             id="Website-View"
-            transform="translate(0.000000, -5447.000000)"
+            transform="translate(0.000000, -5747.000000)"
             fill="#EEEEEE">
             <g
               id="home-section-8-background"
               transform="translate(0.000000, 5262.000000)">
               <g
                 transform="translate(440.500000, 485.000000) scale(-1, 1) translate(-440.500000, -485.000000) translate(0.000000, 185.000000)"
-                id="Path-2-Copy"
-                opacity="0.25">
-                <path d="M0,600 C273.646663,544.341424 204.379832,480.046493 307.064411,425.371761 C409.74899,370.697028 508.420357,464.772297 555.084985,282.598614 C601.749612,100.424931 844.633045,132.85691 881,0 C881,75.5108956 881,275.510896 881,600 C392.564001,600 98.897334,600 0,600 Z"></path>
+                id="Path-2-Copy-2">
+                <path d="M481.796875,600 C589.781063,589.651718 589.781063,498.589709 636.405192,486.013106 C683.029321,473.436504 729.959428,486.013106 760.733215,430.401539 C791.507003,374.789971 805.175089,317.537634 881,300 C881,362.21596 881,462.21596 881,600 C658.54764,600 525.479932,600 481.796875,600 Z"></path>
               </g>
             </g>
           </g>
