@@ -36,8 +36,8 @@ export default function Header() {
 
         <Col xs={0} md={0} lg={8}>
           <nav className="header__right">
-            <a href="#about">About</a>
             <a href="#products">Services</a>
+            <a href="#about">About</a>
             <a href="#contact">Contact</a>
           </nav>
         </Col>
