@@ -13,7 +13,7 @@
       text-align: center;
 
       .title {
-        font-size: 22px;
+        font-size: $pd-font-size-md;
         letter-spacing: 0.5px;
       }
 
@@ -54,7 +54,7 @@
       }
 
       .subtitle {
-        font-size: 29px;
+        font-size: $pd-font-size-md;
         color: #aaaaaa;
         letter-spacing: 0.5px;
       }
