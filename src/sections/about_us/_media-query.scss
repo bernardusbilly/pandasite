@@ -1,0 +1,53 @@
+@import 'scss/variables/index';
+
+@media only screen and (min-width: $phone) {
+  .pd-about {
+    &__v2 {
+      .header {
+        font-size: $pd-font-size-md;
+        margin-bottom: 10px;
+      }
+
+      .page-subtitle {
+        font-size: $pd-font-size-md;
+        margin: 30px 0 20px;
+      }
+
+      .about-description {
+        font-size: 17px;
+      }
+
+      .company {
+        .image-container {
+          height: 90px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $tablet) {
+  .pd-about {
+    &__v2 {
+      .header {
+        font-size: $pd-font-size-lg;
+        margin-bottom: 30px;
+      }
+
+      .page-subtitle {
+        font-size: $pd-font-size-lg;
+        margin: 30px 0 20px;
+      }
+
+      .about-description {
+        font-size: $pd-font-size-md;
+      }
+
+      .company {
+        .image-container {
+          height: 200px;
+        }
+      }
+    }
+  }
+}

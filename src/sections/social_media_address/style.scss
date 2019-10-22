@@ -1,0 +1,46 @@
+@import 'scss/variables/index';
+
+.pd-social-media-address {
+  &__v2 {
+    .header {
+      color: $pd-black-1;
+      font-weight: bold;
+      letter-spacing: 1.68px;
+      text-align: center;
+    }
+
+    .address {
+      color: $pd-grey-1;
+      letter-spacing: 0.5px;
+      text-align: center;
+    }
+
+    .social-media {
+      align-items: center;
+      display: flex;
+
+      .text {
+        color: $pd-grey-1;
+        letter-spacing: 0.5px;
+      }
+
+      .img-container {
+        img {
+          opacity: 0.6;
+          width: 100%;
+        }
+      }
+    }
+
+    .pd-map {
+      margin-bottom: 120px;
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@import './media-query';

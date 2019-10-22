@@ -1,0 +1,10 @@
+.pd-paths {
+  position: relative;
+
+  .path {
+    bottom: 0;
+    position: absolute;
+  }
+}
+
+@import './media-query';

@@ -1,0 +1,13 @@
+@import 'scss/variables/index';
+
+@media only screen and (min-width: $phone) {
+  section {
+    margin-bottom: 50px !important;
+  }
+}
+
+@media only screen and (min-width: $tablet) {
+  section {
+    margin-bottom: 150px !important;
+  }
+}

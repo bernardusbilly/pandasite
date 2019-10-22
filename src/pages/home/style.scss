@@ -9,7 +9,7 @@
   &-main {
     color: $pd-text-dark;
     display: flex;
-  
+
     .pd-sidebar {
       position: fixed;
       padding: 0 10px;
@@ -37,7 +37,7 @@
           text-align: center;
           margin: 20px 0;
         }
-        
+
         .rotated-name {
           margin-bottom: 50px;
           margin-top: 200px;
@@ -50,12 +50,12 @@
         }
       }
     }
-  
+
     .pd-content {
       flex: 1 1 auto;
       margin-left: 90px;
     }
-  
+
     header {
       padding: 20px 0;
       text-align: right;
@@ -65,27 +65,27 @@
         margin: 0 20px;
         text-transform: uppercase;
       }
-      
+
       button {
-        margin-right: 10px;  
+        margin-right: 10px;
       }
     }
-  
+
     .ant-btn-link {
       color: inherit;
     }
-  
+
     .ant-tabs {
       overflow: unset;
-  
+
       &-tab {
         text-transform: uppercase;
         color: $pd-text-light;
-  
+
         &-active {
           font-weight: bold;
           color: inherit;
-  
+
           &::after {
             content: '•';
             color: $pd-text-dark;
@@ -96,15 +96,15 @@
           }
         }
       }
-      
+
       &-nav-scroll {
         text-align: right;
       }
-      
+
       &-ink-bar {
         display: none !important;
       }
-  
+
       &-tabpane {
         padding-bottom: 100px;
       }
@@ -112,18 +112,22 @@
       .ant-tabs-right-bar {
         border-left: 0;
       }
-  
+
       .ant-tabs-right-content {
         border-right: 0;
-        background: linear-gradient(to right, $pd-background-dark, $pd-background);
+        background: linear-gradient(
+          to right,
+          $pd-background-dark,
+          $pd-background
+        );
       }
-  
+
       .tab-1,
       .tab-2,
       .tab-3 {
         padding-top: 60px;
         padding-left: 40px;
-  
+
         div {
           font-size: 100px;
           font-weight: bold;
@@ -131,30 +135,30 @@
           line-height: 120px;
           text-transform: uppercase;
         }
-  
+
         p {
           font-weight: bold;
           margin-top: 30px;
         }
       }
-  
+
       .tab-1 {
         div:nth-child(3) {
           color: $pd-text-light;
         }
       }
-  
+
       .tab-2 {
         text-align: center;
-  
+
         div:nth-child(2) {
           color: $pd-text-light;
         }
       }
-  
+
       .tab-3 {
         text-align: right;
-  
+
         div:nth-child(4) {
           color: $pd-text-light;
         }
@@ -206,7 +210,7 @@
 
           > div {
             flex: 1 1 auto;
-            
+
             &:first-child {
               margin-right: 10px;
             }
@@ -219,7 +223,8 @@
           padding: 10px 0;
         }
 
-        input, textarea {
+        input,
+        textarea {
           background-color: $pd-color-gray;
           border: none;
           border-radius: 4px;
@@ -236,20 +241,20 @@
           margin-bottom: 20px;
         }
       }
-      
+
       .sidebar {
         display: flex;
         margin: 20px;
         flex-direction: column;
 
-        .contact-whatsapp {  
+        .contact-whatsapp {
           text-align: center;
           background: #fafafa; // custom background-color from whatsapp branding
           border-radius: 6px;
           box-shadow: 1px 2px 4px lightgray;
           color: $pd-text-dark;
           padding-bottom: 20px;
-  
+
           img {
             width: 240px;
           }
@@ -261,7 +266,7 @@
           margin-top: 20px;
           overflow: hidden;
           width: 240px;
-          
+
           img {
             width: 100%;
           }
@@ -270,7 +275,6 @@
     }
 
     .pd-traction {
-
       .header {
         font-weight: bold;
         font-size: 20px;
@@ -281,7 +285,7 @@
       &-wrapper {
         display: flex;
         flex-wrap: wrap;
-        
+
         &-company {
           background: white;
           border-radius: 7px;
@@ -292,7 +296,7 @@
           margin: 20px;
           height: 150px;
           width: 200px;
-  
+
           > img {
             margin: 0 auto;
             width: 100px;
@@ -300,7 +304,7 @@
         }
       }
     }
-    
+
     .pd-about {
       .page-title {
         font-size: 60px;
@@ -311,8 +315,8 @@
       }
 
       .content-wrapper {
-        padding: 0 100px; 
-        
+        padding: 0 100px;
+
         h1 {
           color: $pd-text-light;
           font-weight: bold;
@@ -325,20 +329,20 @@
 
           .team-photo {
             border-radius: 4px;
-            background-color: #DDE7EE;
+            background-color: #dde7ee;
             display: inline-block;
             margin: 20px;
             overflow: hidden;
             position: relative;
             height: 200px;
             width: 162px;
-            
+
             img {
-              width: 100%
+              width: 100%;
             }
 
             .display-name {
-              background: rgba(0,0,0,0.5);
+              background: rgba(0, 0, 0, 0.5);
               bottom: 0;
               color: $pd-text-light;
               display: none;
@@ -355,7 +359,7 @@
               }
             }
           }
-          
+
           .team-introduction {
             display: inline-block;
             position: relative;
@@ -364,7 +368,8 @@
             height: 200px;
             border-radius: 4px;
 
-            &-title, &-subtitle {
+            &-title,
+            &-subtitle {
               position: absolute;
               text-align: right;
               width: 100%;
@@ -372,7 +377,7 @@
 
             &-title {
               top: 20px;
-              font-size: 30px;
+              font-size: $pd-font-size-md;
               line-height: 40px;
               text-transform: uppercase;
               font-weight: bold;
@@ -394,7 +399,7 @@
       }
 
       &-footer {
-        background: linear-gradient($pd-background, $pd-background-dark); 
+        background: linear-gradient($pd-background, $pd-background-dark);
         margin-top: 100px;
         padding: 40px 0;
         text-align: center;
@@ -414,7 +419,7 @@
       }
     }
   }
-  
+
   &-footer {
     background-color: $pd-color-dark-blue;
     color: $pd-text-light;

@@ -1,0 +1,35 @@
+@import 'scss/variables/index';
+
+@media only screen and (min-width: $phone) {
+  .pd-traction {
+    &__v2 {
+      .header {
+        font-size: $pd-font-size-md;
+        margin: 20px 0;
+      }
+
+      .company {
+        .image-container {
+          height: 90px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $tablet) {
+  .pd-traction {
+    &__v2 {
+      .header {
+        font-size: $pd-font-size-lg;
+        margin: 70px 0;
+      }
+
+      .company {
+        .image-container {
+          height: 200px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+@import 'scss/variables/index.scss';
+
+.pd-headline {
+  &__v2 {
+    .item {
+      & > .title {
+        font-weight: bold;
+        text-transform: uppercase;
+
+        .primary {
+          color: $pd-black-1;
+        }
+        .secondary {
+          color: #d7dbdd;
+        }
+      }
+      .description {
+        color: $pd-grey-1;
+      }
+    }
+  }
+}
+
+.ant-carousel {
+  .slick-slider {
+    margin-bottom: 50px !important;
+  }
+
+  .slick-dots {
+    bottom: -25px !important;
+    display: flex !important;
+
+    .slick-active button {
+      background: $pd-black-1 !important;
+      color: $pd-black-1 !important;
+    }
+    li button {
+      background: #979797 !important;
+      color: #979797 !important;
+    }
+  }
+}
+
+@import './media-query';

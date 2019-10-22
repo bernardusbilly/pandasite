@@ -1,0 +1,73 @@
+@import 'scss/variables/index';
+
+@media only screen and (min-width: $phone) {
+  .pd-start-project {
+    .background {
+      background: #f9fafb;
+      margin: 0 -20px;
+      padding: 30px 20px;
+    }
+
+    .text {
+      margin-bottom: 30px;
+      text-align: center;
+
+      .title {
+        font-size: $pd-font-size-md;
+        letter-spacing: 0.5px;
+      }
+
+      .subtitle {
+        font-size: 17px;
+        letter-spacing: 0.39px;
+        margin-top: 20px;
+      }
+    }
+
+    .button button {
+      text-align: center;
+      width: 100%;
+    }
+
+    .image-container {
+      margin: 0 auto;
+      width: 193px;
+    }
+  }
+}
+
+@media only screen and (min-width: $tablet) {
+  .pd-start-project {
+    .background {
+      background: #f9fafb;
+      margin: 0 -70px;
+      padding: 70px;
+    }
+
+    .text {
+      margin-bottom: 70px;
+      text-align: left;
+
+      .title {
+        font-size: $pd-font-size-lg;
+        margin-bottom: 30px;
+      }
+
+      .subtitle {
+        font-size: $pd-font-size-md;
+        color: #aaaaaa;
+        letter-spacing: 0.5px;
+      }
+    }
+
+    .button button {
+      text-align: left;
+      width: initial;
+    }
+
+    .image-container {
+      text-align: center;
+      width: 100%;
+    }
+  }
+}

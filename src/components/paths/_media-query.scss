@@ -1,0 +1,37 @@
+@import 'scss/variables/index';
+
+@media only screen and (min-width: $phone) {
+  .pd-paths {
+    .path {
+      &.first {
+        left: -125px;
+      }
+
+      &.second {
+        left: -350px;
+      }
+
+      &.third {
+        left: -450px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $tablet) {
+  .pd-paths {
+    .path {
+      &.first {
+        left: 0px;
+      }
+
+      &.second {
+        left: 0px;
+      }
+
+      &.third {
+        left: 0px;
+      }
+    }
+  }
+}

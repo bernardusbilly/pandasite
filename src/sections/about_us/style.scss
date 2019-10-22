@@ -1,0 +1,39 @@
+@import 'scss/variables/index.scss';
+
+.pd-about {
+  &__v2 {
+    .background {
+      background: url('/img/backgrounds/bg-about_v2.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin: 0px -70px;
+
+      .content-wrapper {
+        padding: 50px 70px;
+      }
+    }
+
+    .header {
+      color: $pd-black-1;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .about-description {
+      color: $pd-grey-1;
+      letter-spacing: 0.5px;
+      text-align: center;
+    }
+
+    .page-subtitle {
+      color: $pd-grey-2;
+      font-weight: bold;
+      margin: 70px 0 30px;
+      text-align: center;
+    }
+  }
+}
+
+@import './media-query';

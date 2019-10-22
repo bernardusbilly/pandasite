@@ -1,0 +1,58 @@
+@import 'scss/variables/index';
+
+.pd-header {
+  &__v2 {
+    background: $pd-white;
+    margin: 0 -20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+
+    &.box-shadow-active {
+      box-shadow: 0 0px 6px 0 rgba(49, 53, 59, 0.12);
+    }
+
+    .header__left {
+      align-items: center;
+      display: flex;
+
+      .logo {
+        img {
+          width: 100%;
+        }
+      }
+
+      .company {
+        color: $pd-black-1;
+        letter-spacing: 0.5px;
+        text-align: left;
+      }
+    }
+
+    .header__right {
+      margin-top: 10px;
+      text-align: right;
+
+      a {
+        font-size: $pd-font-size-sm;
+        color: $pd-black-1;
+        letter-spacing: 0.5px;
+        text-align: center;
+        text-transform: uppercase;
+
+        &:not(:first-of-type) {
+          margin-left: 50px;
+        }
+      }
+    }
+
+    .icon-menu {
+      cursor: pointer;
+      font-size: $pd-font-size-md;
+      margin-top: 6px;
+    }
+  }
+}
+
+@import './media-query';

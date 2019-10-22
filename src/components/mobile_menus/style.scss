@@ -1,0 +1,50 @@
+@import 'scss/variables/index';
+
+.pd-mobile-menu {
+  background-color: $pd-white;
+  height: 100%;
+  left: 0;
+  padding: 50px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+
+  .header {
+    color: $pd-black-1;
+    font-size: $pd-font-size-md;
+    font-weight: 600;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+
+    .side-btn {
+      cursor: pointer;
+
+      &--right {
+        font-size: 15px;
+        font-weight: 500;
+        margin-top: 6px;
+      }
+    }
+    .title {
+      font-weight: bold;
+      text-align: left;
+    }
+  }
+
+  .menu-list {
+    padding: 0px;
+
+    li {
+      border-bottom: solid 2px #eee;
+      color: $pd-grey-1;
+      font-size: 17px;
+      font-weight: bold;
+      letter-spacing: 0.39px;
+      list-style: none;
+      margin-bottom: 30px;
+      padding-bottom: 10px;
+      text-transform: uppercase;
+    }
+  }
+}

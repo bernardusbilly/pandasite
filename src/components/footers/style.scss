@@ -1,0 +1,14 @@
+@import 'scss/variables/index';
+
+.pd-footer {
+  &__v2 {
+    background: $pd-black-1;
+    color: $pd-white;
+    font-size: $pd-font-size-sm;
+    letter-spacing: 0.82px;
+    padding: 20px 0;
+    text-align: center;
+  }
+}
+
+@import './media-query';

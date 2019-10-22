@@ -1,0 +1,55 @@
+@import 'scss/variables/index';
+
+@media only screen and (min-width: $phone) {
+  .team {
+    .background {
+      padding: 20px 70px;
+    }
+
+    .page-title {
+      font-size: $pd-font-size-md;
+      margin-bottom: 10px;
+    }
+
+    .page-subtitle {
+      font-size: $pd-font-size-sm;
+      margin-bottom: 20px;
+    }
+
+    .team-image-container {
+      height: 160px;
+
+      & > .display-name {
+        font-size: $pd-font-size-sm;
+        left: 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $tablet) {
+  .team {
+    .background {
+      padding: 50px 70px;
+    }
+
+    .page-title {
+      font-size: $pd-font-size-lg;
+      margin-bottom: 30px;
+    }
+
+    .page-subtitle {
+      font-size: $pd-font-size-md;
+      margin-bottom: 55px;
+    }
+
+    .team-image-container {
+      height: 300px;
+
+      & > .display-name {
+        font-size: $pd-font-size-md;
+        left: 20px;
+      }
+    }
+  }
+}

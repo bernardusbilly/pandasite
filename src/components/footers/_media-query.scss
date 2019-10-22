@@ -1,0 +1,18 @@
+@import 'scss/variables/index';
+
+@media only screen and (min-width: $phone) {
+  .pd-footer {
+    &__v2 {
+      font-size: 15px;
+      letter-spacing: 0.82px;
+    }
+  }
+}
+
+@media only screen and (min-width: $tablet) {
+  .pd-footer {
+    &__v2 {
+      font-size: $pd-font-size-sm;
+    }
+  }
+}

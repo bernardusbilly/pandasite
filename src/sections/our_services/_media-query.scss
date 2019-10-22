@@ -1,0 +1,68 @@
+@import 'scss/variables/index';
+
+@media only screen and (min-width: $phone) {
+  .pd-products {
+    &__v2 {
+      .header {
+        font-size: $pd-font-size-md;
+        margin: 20px 0;
+      }
+
+      .img-container {
+        margin: 20px 0;
+      }
+
+      &-item {
+        &--mobile-tablet {
+          .dropdown {
+            .title {
+              font-size: 20px !important;
+            }
+          }
+        }
+
+        &__text {
+          margin-bottom: 20px;
+
+          .description {
+            font-size: 16px;
+            letter-spacing: 0.39px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $desktop) {
+  .pd-products {
+    &__v2 {
+      background: url('/img/backgrounds/bg-our-service_v2.png');
+      background-repeat: no-repeat;
+      background-size: auto;
+
+      .header {
+        font-size: $pd-font-size-lg;
+        margin: 70px 0;
+      }
+
+      &-item {
+        background: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 0 20px 0 rgba(51, 51, 51, 0.1);
+        height: 490px;
+        padding: 30px;
+
+        &__text {
+          height: 179px;
+          margin-bottom: 0px;
+
+          .description {
+            font-size: $pd-font-size-sm;
+            letter-spacing: 0.5px;
+          }
+        }
+      }
+    }
+  }
+}

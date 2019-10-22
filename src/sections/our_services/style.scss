@@ -1,0 +1,53 @@
+@import 'scss/variables/index.scss';
+
+.pd-products {
+  &__v2 {
+    margin: 0px -70px;
+    padding: 0 70px;
+
+    .header {
+      color: $pd-black-1;
+      letter-spacing: 0.5px;
+      font-weight: bold;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .img-container {
+      text-align: center;
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .dropdown {
+        border-bottom: solid 1px #eeeeee;
+        cursor: pointer;
+        display: flex;
+        margin-bottom: 20px;
+        justify-content: space-between;
+        padding: 8px 16px;
+      }
+
+      &__text {
+        .title {
+          font-size: $pd-font-size-md;
+          color: $pd-black-1;
+          letter-spacing: 0.5px;
+          margin-bottom: 10px;
+          text-align: center;
+        }
+
+        .description {
+          color: $pd-grey-1;
+          letter-spacing: 0.5px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@import './media-query';
